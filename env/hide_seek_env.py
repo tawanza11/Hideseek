@@ -81,13 +81,18 @@ class HideSeekEnv(gym.Env[np.ndarray, int]):
         super().reset(seed=seed)
         del options  # Reserved for future reset customization.
 
-        cells = self.np_random.permutation(self.grid_size * self.grid_size)
+        spawn_cells = np.asarray(self._spawn_cells(), dtype=np.int64)
+        cells = self.np_random.permutation(spawn_cells)
         seeker_cell, hider_cell = int(cells[0]), int(cells[1])
         self.seeker_pos = (seeker_cell % self.grid_size, seeker_cell // self.grid_size)
         self.hider_pos = (hider_cell % self.grid_size, hider_cell // self.grid_size)
         self.steps = 0
         self._captured = False
-        return self._observation(), {"success": False, "captured": False, "distance": self._distance()}
+        return self._observation(), {
+            "success": False,
+            "captured": False,
+            "distance": self._reported_distance(),
+        }
 
     def step(self, action: int) -> tuple[np.ndarray, float, bool, bool, dict[str, bool | int]]:
         if self._captured or self.steps >= self.max_steps:
@@ -130,7 +135,7 @@ class HideSeekEnv(gym.Env[np.ndarray, int]):
         info: dict[str, bool | int] = {
             "success": success,
             "captured": captured,
-            "distance": self._distance(),
+            "distance": self._reported_distance(),
         }
         return self._observation(), reward, terminated, truncated, info
 
@@ -149,6 +154,7 @@ class HideSeekEnv(gym.Env[np.ndarray, int]):
             line = coordinate * cell_size
             image[line - 1 : line + 1, :, :] = (205, 205, 205)
             image[:, line - 1 : line + 1, :] = (205, 205, 205)
+        self._paint_obstacles(image, cell_size, margin)
         self._paint_cell(image, self.hider_pos, cell_size, margin, (70, 180, 90))
         self._paint_cell(image, self.seeker_pos, cell_size, margin, (65, 115, 220))
 
@@ -233,6 +239,18 @@ class HideSeekEnv(gym.Env[np.ndarray, int]):
     def _inside(self, position: tuple[int, int]) -> bool:
         x, y = position
         return 0 <= x < self.grid_size and 0 <= y < self.grid_size
+
+    def _spawn_cells(self) -> tuple[int, ...]:
+        """Return row-major cell IDs available when an episode starts."""
+        return tuple(range(self.grid_size * self.grid_size))
+
+    def _paint_obstacles(self, image: np.ndarray, cell_size: int, margin: int) -> None:
+        """Allow grid environments to paint obstacles before the players."""
+        del image, cell_size, margin
+
+    def _reported_distance(self) -> int:
+        """Distance included in info; subclasses may hide it from an agent."""
+        return self._distance()
 
     def _distance(self) -> int:
         return abs(self.seeker_pos[0] - self.hider_pos[0]) + abs(

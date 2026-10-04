@@ -60,3 +60,9 @@ python -m evaluation.evaluate_v3 --watch
 ```
 
 การฝึกเริ่มโมเดลใหม่สำหรับ 3 training seed (41, 42, 43) โดยฝึก Seeker กับ Hider สุ่ม 100,000 ก้าวก่อน แล้วฝึก Hider/Seeker สลับกัน 2 รอบ รอบละฝ่ายละ 50,000 ก้าว คู่แข่งหยุดเรียนรู้ในแต่ละช่วง ประเมิน 3 กลุ่ม seed ที่แยกจากการฝึก กลุ่มละ 100 เกมต่อคู่ต่อ training seed; `--watch` เปิดภาพเกมตัวอย่าง 1 รอบ โมเดล V1/V2 ไม่ถูกเขียนทับ รายละเอียดและผลจริงอยู่ใน [docs/v3_report.md](docs/v3_report.md)
+
+ดูภาพเกมจากโมเดลที่ฝึกแล้วได้ที่ [Seeker จับได้](results/v3_demo_capture.gif) และ [Hider รอดครบเวลา](results/v3_demo_hidden.gif) สีน้ำเงินคือ Seeker, สีเขียวคือ Hider, สีเทาคือกำแพง ข้อความบนภาพบอกว่า Seeker มองเห็น Hider หรือไม่ หากต้องการเปิดเกมสดหลายก้าวโดยไม่เขียนทับผลประเมินเดิม:
+
+```bash
+python -m evaluation.evaluate_v3 --training-seeds 41 --eval-seed-starts 10014 --episodes-per-group 1 --output-dir /tmp/hideseek-v3-preview --fps 2 --watch
+```

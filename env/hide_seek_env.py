@@ -1,8 +1,9 @@
-"""A small grid based Hide-and-Seek environment for seeker training."""
+"""A small grid based Hide-and-Seek environment for either learner role."""
 
 from __future__ import annotations
 
-from typing import Any
+from collections.abc import Callable
+from typing import Any, Literal
 
 import gymnasium as gym
 import numpy as np
@@ -10,7 +11,7 @@ from gymnasium import spaces
 
 
 class HideSeekEnv(gym.Env[np.ndarray, int]):
-    """Train one seeker against a randomly moving hider on an open grid.
+    """Train one agent against a fixed opponent policy on an open grid.
 
     Coordinates use ``(x, y)`` with ``(0, 0)`` at the upper-left corner.
     Actions are ordered up, down, left, right. Boundary attempts leave an
@@ -36,6 +37,8 @@ class HideSeekEnv(gym.Env[np.ndarray, int]):
         max_steps: int = 64,
         render_mode: str | None = None,
         step_cost: float = -0.01,
+        role: Literal["seeker", "hider"] = "seeker",
+        opponent_policy: Callable[[np.ndarray], int] | None = None,
     ) -> None:
         super().__init__()
         if grid_size < 2:
@@ -46,11 +49,15 @@ class HideSeekEnv(gym.Env[np.ndarray, int]):
             raise ValueError("step_cost must be zero or negative")
         if render_mode not in (None, "human", "rgb_array"):
             raise ValueError("render_mode must be None, 'human', or 'rgb_array'")
+        if role not in ("seeker", "hider"):
+            raise ValueError("role must be 'seeker' or 'hider'")
 
         self.grid_size = grid_size
         self.max_steps = max_steps
         self.render_mode = render_mode
         self.step_cost = float(step_cost)
+        self.role = role
+        self.opponent_policy = opponent_policy
         self.action_space = spaces.Discrete(len(self._ACTION_DELTAS))
         self.observation_space = spaces.Box(
             low=np.zeros(8, dtype=np.float32),
@@ -89,31 +96,39 @@ class HideSeekEnv(gym.Env[np.ndarray, int]):
             raise ValueError(f"action must be an integer in [0, 3], got {action!r}")
 
         self.steps += 1
-        self.seeker_pos = self._move(self.seeker_pos, int(action))
-        captured = self.seeker_pos == self.hider_pos
-
-        if not captured:
-            legal_hider_actions = [
-                index
-                for index, (dx, dy) in enumerate(self._ACTION_DELTAS)
-                if self._inside((self.hider_pos[0] + dx, self.hider_pos[1] + dy))
-            ]
-            hider_action = int(self.np_random.choice(legal_hider_actions))
-            self.hider_pos = self._move(self.hider_pos, hider_action)
+        if self.role == "seeker":
+            # Both policies observe the state at the start of the turn.
+            # The hider's move is still resolved after the seeker's move.
+            hider_action = (
+                self._opponent_action("hider") if self.opponent_policy is not None else None
+            )
+            self.seeker_pos = self._move(self.seeker_pos, int(action))
             captured = self.seeker_pos == self.hider_pos
+            if not captured:
+                if hider_action is None:
+                    hider_action = self._opponent_action("hider")
+                self.hider_pos = self._move(self.hider_pos, hider_action)
+                captured = self.seeker_pos == self.hider_pos
+        else:
+            seeker_action = self._opponent_action("seeker")
+            self.seeker_pos = self._move(self.seeker_pos, seeker_action)
+            captured = self.seeker_pos == self.hider_pos
+            if not captured:
+                self.hider_pos = self._move(self.hider_pos, int(action))
+                captured = self.seeker_pos == self.hider_pos
 
         self._captured = captured
         terminated = captured
         truncated = not captured and self.steps >= self.max_steps
-        if captured:
-            reward = 1.0
-        elif truncated:
-            reward = -1.0
+        if self.role == "seeker":
+            reward = 1.0 if captured else -1.0 if truncated else self.step_cost
+            success = captured
         else:
-            reward = self.step_cost
+            reward = -1.0 if captured else 1.0 if truncated else -self.step_cost
+            success = truncated
 
         info: dict[str, bool | int] = {
-            "success": captured,
+            "success": success,
             "captured": captured,
             "distance": self._distance(),
         }
@@ -170,20 +185,45 @@ class HideSeekEnv(gym.Env[np.ndarray, int]):
         self._clock = None
 
     def _observation(self) -> np.ndarray:
+        return self._observation_for(self.role)
+
+    def _observation_for(self, role: Literal["seeker", "hider"]) -> np.ndarray:
         denominator = float(self.grid_size - 1)
-        seeker_x, seeker_y = self.seeker_pos
-        hider_x, hider_y = self.hider_pos
+        controlled_pos, opponent_pos = (
+            (self.seeker_pos, self.hider_pos)
+            if role == "seeker"
+            else (self.hider_pos, self.seeker_pos)
+        )
+        controlled_x, controlled_y = controlled_pos
+        opponent_x, opponent_y = opponent_pos
         values = (
-            seeker_x / denominator,
-            seeker_y / denominator,
-            hider_x / denominator,
-            hider_y / denominator,
-            seeker_x / denominator,
-            (self.grid_size - 1 - seeker_x) / denominator,
-            seeker_y / denominator,
-            (self.grid_size - 1 - seeker_y) / denominator,
+            controlled_x / denominator,
+            controlled_y / denominator,
+            opponent_x / denominator,
+            opponent_y / denominator,
+            controlled_x / denominator,
+            (self.grid_size - 1 - controlled_x) / denominator,
+            controlled_y / denominator,
+            (self.grid_size - 1 - controlled_y) / denominator,
         )
         return np.asarray(values, dtype=np.float32)
+
+    def _opponent_action(self, opponent_role: Literal["seeker", "hider"]) -> int:
+        if self.opponent_policy is not None:
+            action = self.opponent_policy(self._observation_for(opponent_role))
+            if not self.action_space.contains(action):
+                raise ValueError(f"opponent policy action must be an integer in [0, 3], got {action!r}")
+            return int(action)
+
+        if opponent_role == "seeker":
+            return int(self.np_random.integers(len(self._ACTION_DELTAS)))
+
+        legal_hider_actions = [
+            index
+            for index, (dx, dy) in enumerate(self._ACTION_DELTAS)
+            if self._inside((self.hider_pos[0] + dx, self.hider_pos[1] + dy))
+        ]
+        return int(self.np_random.choice(legal_hider_actions))
 
     def _move(self, position: tuple[int, int], action: int) -> tuple[int, int]:
         dx, dy = self._ACTION_DELTAS[action]

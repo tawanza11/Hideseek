@@ -1,0 +1,11 @@
+{
+  "role": "hider",
+  "grid_size": 8,
+  "max_steps": 64,
+  "seed": 42,
+  "rounds": 2,
+  "timesteps_per_phase": 50000,
+  "actual_timesteps": 100352,
+  "actual_v2_timesteps": 100352,
+  "v1_seeker": "models/seeker_ppo.zip"
+}

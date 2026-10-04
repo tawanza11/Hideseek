@@ -1,0 +1,8 @@
+{
+  "grid_size": 8,
+  "max_steps": 64,
+  "seed": 42,
+  "train_log": "results/train_episodes.csv",
+  "requested_timesteps": 100000,
+  "actual_timesteps": 100352
+}

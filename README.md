@@ -66,3 +66,23 @@ python -m evaluation.evaluate_v3 --watch
 ```bash
 python -m evaluation.evaluate_v3 --training-seeds 41 --eval-seed-starts 10014 --episodes-per-group 1 --output-dir /tmp/hideseek-v3-preview --fps 2 --watch
 ```
+
+## V3.1: Seeker เลือกทิศที่เดินได้
+
+V3.1 วัดพบว่า Seeker V3 เลือกเดินชนกำแพงบ่อย จึงฝึกต่อจากโมเดล V3 โดยเทียบชุดที่มีค่าปรับกำแพงกับชุด Control ที่ไม่มีค่าปรับ ผลยืนยันพบว่า **ค่าปรับไม่ช่วยสม่ำเสมอ** แต่การใช้ Control ร่วมกับการเลือก action ที่มีความน่าจะเป็นสูงสุดเฉพาะทิศที่เดินได้ จับ Hider V3 ได้ 72.3% บน eval seed ชุดใหม่ 900 เกม ตัวกรองใช้เพียงตำแหน่งตัวเองและแผนที่กำแพงที่โมเดลเห็นอยู่แล้ว โมเดล V1–V3 ยังอยู่เหมือนเดิม
+
+รีโปมีโมเดล V3.1 และผลประเมินแล้ว ดู [ตัวอย่างเกม](results/v31_demo_capture.gif) หรือเปิดเกมสดได้ทันที:
+
+```bash
+python -m evaluation.watch_v31
+```
+
+หากต้องการฝึกและประเมินซ้ำ:
+
+```bash
+python -m training.train_v31
+python -m evaluation.evaluate_v31
+python -m evaluation.evaluate_v31 --eval-seed-starts 70000 80000 90000 --legal-mask
+```
+
+วิธีทดลอง ผลราย seed และข้อจำกัดอยู่ใน [docs/v31_report.md](docs/v31_report.md)

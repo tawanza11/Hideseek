@@ -1,0 +1,26 @@
+{
+  "version": "3.1",
+  "role": "seeker",
+  "variant": "penalty",
+  "seed": 41,
+  "wall_penalty": 0.02,
+  "map_rows": [
+    "##########",
+    "#...#....#",
+    "#...#....#",
+    "#........#",
+    "#...#....#",
+    "###.######",
+    "#........#",
+    "#....#...#",
+    "#....#...#",
+    "##########"
+  ],
+  "max_steps": 100,
+  "source_model": "models/seeker_v3_seed41.zip",
+  "hider_model": "models/hider_v3_seed41.zip",
+  "source_timesteps": 200704,
+  "additional_timesteps_requested": 100000,
+  "actual_additional_timesteps": 100352,
+  "total_timesteps": 301056
+}

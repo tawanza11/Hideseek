@@ -1,0 +1,26 @@
+{
+  "version": "3.1",
+  "role": "seeker",
+  "variant": "control",
+  "seed": 42,
+  "wall_penalty": 0.0,
+  "map_rows": [
+    "##########",
+    "#...#....#",
+    "#...#....#",
+    "#........#",
+    "#...#....#",
+    "###.######",
+    "#........#",
+    "#....#...#",
+    "#....#...#",
+    "##########"
+  ],
+  "max_steps": 100,
+  "source_model": "models/seeker_v3_seed42.zip",
+  "hider_model": "models/hider_v3_seed42.zip",
+  "source_timesteps": 200704,
+  "additional_timesteps_requested": 100000,
+  "actual_additional_timesteps": 100352,
+  "total_timesteps": 301056
+}

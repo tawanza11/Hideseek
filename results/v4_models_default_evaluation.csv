@@ -1,0 +1,1201 @@
+partition,map,training_seed,eval_seed,matchup,captured,steps,wall_hits,unique_cells,visible_steps,initial_visible
+default,default,41,300000,Random,0,100,32,17,0,0
+default,default,41,300000,V3.1 masked,0,100,0,7,0,0
+default,default,41,300000,V4 no memory,0,100,0,5,0,0
+default,default,41,300000,V4 memory,0,100,0,3,0,0
+default,default,41,300001,Random,0,100,22,14,0,0
+default,default,41,300001,V3.1 masked,0,100,0,4,0,0
+default,default,41,300001,V4 no memory,0,100,0,6,0,0
+default,default,41,300001,V4 memory,0,100,0,9,0,0
+default,default,41,300002,Random,0,100,28,16,18,1
+default,default,41,300002,V3.1 masked,1,8,0,9,8,1
+default,default,41,300002,V4 no memory,1,8,0,9,8,1
+default,default,41,300002,V4 memory,1,14,0,15,11,1
+default,default,41,300003,Random,0,100,22,21,0,0
+default,default,41,300003,V3.1 masked,0,100,0,4,0,0
+default,default,41,300003,V4 no memory,0,100,0,6,0,0
+default,default,41,300003,V4 memory,0,100,0,2,0,0
+default,default,41,300004,Random,0,100,23,18,0,0
+default,default,41,300004,V3.1 masked,1,10,0,7,5,0
+default,default,41,300004,V4 no memory,1,8,0,9,4,0
+default,default,41,300004,V4 memory,1,12,0,11,8,0
+default,default,41,300005,Random,0,100,36,11,0,0
+default,default,41,300005,V3.1 masked,0,100,0,7,0,0
+default,default,41,300005,V4 no memory,0,100,0,9,0,0
+default,default,41,300005,V4 memory,1,14,0,14,2,0
+default,default,41,300006,Random,1,23,4,10,6,0
+default,default,41,300006,V3.1 masked,0,100,0,6,0,0
+default,default,41,300006,V4 no memory,0,100,0,4,0,0
+default,default,41,300006,V4 memory,0,100,0,5,0,0
+default,default,41,300007,Random,1,9,0,7,9,1
+default,default,41,300007,V3.1 masked,1,2,0,3,2,1
+default,default,41,300007,V4 no memory,1,2,0,3,2,1
+default,default,41,300007,V4 memory,1,2,0,3,2,1
+default,default,41,300008,Random,0,100,22,13,0,0
+default,default,41,300008,V3.1 masked,1,8,0,9,3,0
+default,default,41,300008,V4 no memory,0,100,0,4,0,0
+default,default,41,300008,V4 memory,0,100,0,2,0,0
+default,default,41,300009,Random,1,41,11,14,8,0
+default,default,41,300009,V3.1 masked,0,100,0,3,0,0
+default,default,41,300009,V4 no memory,0,100,0,5,0,0
+default,default,41,300009,V4 memory,0,100,0,8,0,0
+default,default,41,300010,Random,1,83,15,16,81,1
+default,default,41,300010,V3.1 masked,1,2,0,3,2,1
+default,default,41,300010,V4 no memory,0,100,0,5,2,1
+default,default,41,300010,V4 memory,1,2,0,3,2,1
+default,default,41,300011,Random,1,6,2,5,5,0
+default,default,41,300011,V3.1 masked,1,6,0,6,5,0
+default,default,41,300011,V4 no memory,1,2,0,3,1,0
+default,default,41,300011,V4 memory,1,2,0,3,1,0
+default,default,41,300012,Random,0,100,27,16,14,1
+default,default,41,300012,V3.1 masked,1,2,0,3,2,1
+default,default,41,300012,V4 no memory,1,2,0,3,2,1
+default,default,41,300012,V4 memory,1,3,0,2,3,1
+default,default,41,300013,Random,0,100,25,15,17,0
+default,default,41,300013,V3.1 masked,1,7,0,8,5,0
+default,default,41,300013,V4 no memory,1,7,0,8,5,0
+default,default,41,300013,V4 memory,1,9,0,10,7,0
+default,default,41,300014,Random,1,65,14,14,1,0
+default,default,41,300014,V3.1 masked,0,100,0,8,0,0
+default,default,41,300014,V4 no memory,0,100,0,6,0,0
+default,default,41,300014,V4 memory,0,100,0,7,0,0
+default,default,41,300015,Random,0,100,23,20,0,0
+default,default,41,300015,V3.1 masked,1,12,0,13,5,0
+default,default,41,300015,V4 no memory,1,12,0,13,5,0
+default,default,41,300015,V4 memory,1,12,0,13,5,0
+default,default,41,300016,Random,0,100,27,10,0,0
+default,default,41,300016,V3.1 masked,0,100,0,8,0,0
+default,default,41,300016,V4 no memory,0,100,0,10,0,0
+default,default,41,300016,V4 memory,0,100,0,10,0,0
+default,default,41,300017,Random,1,1,0,2,1,1
+default,default,41,300017,V3.1 masked,1,1,0,2,1,1
+default,default,41,300017,V4 no memory,1,1,0,2,1,1
+default,default,41,300017,V4 memory,1,1,0,2,1,1
+default,default,41,300018,Random,1,12,3,7,12,1
+default,default,41,300018,V3.1 masked,1,4,0,4,4,1
+default,default,41,300018,V4 no memory,1,5,0,4,5,1
+default,default,41,300018,V4 memory,0,100,0,3,100,1
+default,default,41,300019,Random,1,34,4,16,13,0
+default,default,41,300019,V3.1 masked,1,10,0,11,5,0
+default,default,41,300019,V4 no memory,0,100,0,5,0,0
+default,default,41,300019,V4 memory,0,100,0,2,0,0
+default,default,41,300020,Random,0,100,34,20,0,0
+default,default,41,300020,V3.1 masked,0,100,0,4,0,0
+default,default,41,300020,V4 no memory,0,100,0,6,0,0
+default,default,41,300020,V4 memory,0,100,0,2,0,0
+default,default,41,300021,Random,0,100,27,24,0,0
+default,default,41,300021,V3.1 masked,1,9,0,10,5,0
+default,default,41,300021,V4 no memory,0,100,0,4,0,0
+default,default,41,300021,V4 memory,0,100,0,3,0,0
+default,default,41,300022,Random,1,9,3,6,9,1
+default,default,41,300022,V3.1 masked,1,4,0,5,4,1
+default,default,41,300022,V4 no memory,1,4,0,5,4,1
+default,default,41,300022,V4 memory,1,6,0,6,6,1
+default,default,41,300023,Random,0,100,21,17,32,1
+default,default,41,300023,V3.1 masked,1,3,0,4,3,1
+default,default,41,300023,V4 no memory,1,3,0,4,3,1
+default,default,41,300023,V4 memory,0,100,0,3,100,1
+default,default,41,300024,Random,0,100,31,15,100,1
+default,default,41,300024,V3.1 masked,1,4,0,5,4,1
+default,default,41,300024,V4 no memory,1,4,0,5,4,1
+default,default,41,300024,V4 memory,1,6,0,6,6,1
+default,default,41,300025,Random,0,100,24,14,0,0
+default,default,41,300025,V3.1 masked,0,100,0,7,0,0
+default,default,41,300025,V4 no memory,0,100,0,5,0,0
+default,default,41,300025,V4 memory,0,100,0,3,0,0
+default,default,41,300026,Random,1,31,4,15,19,0
+default,default,41,300026,V3.1 masked,1,7,0,8,2,0
+default,default,41,300026,V4 no memory,0,100,0,4,0,0
+default,default,41,300026,V4 memory,0,100,0,5,0,0
+default,default,41,300027,Random,0,100,17,28,0,0
+default,default,41,300027,V3.1 masked,0,100,0,6,0,0
+default,default,41,300027,V4 no memory,0,100,0,4,0,0
+default,default,41,300027,V4 memory,0,100,0,10,0,0
+default,default,41,300028,Random,0,100,23,20,0,0
+default,default,41,300028,V3.1 masked,1,9,0,10,2,0
+default,default,41,300028,V4 no memory,0,100,0,6,0,0
+default,default,41,300028,V4 memory,0,100,0,7,0,0
+default,default,41,300029,Random,0,100,36,10,0,0
+default,default,41,300029,V3.1 masked,0,100,0,9,0,0
+default,default,41,300029,V4 no memory,0,100,0,11,0,0
+default,default,41,300029,V4 memory,0,100,0,16,84,0
+default,default,41,300030,Random,1,1,0,2,1,1
+default,default,41,300030,V3.1 masked,1,2,0,2,2,1
+default,default,41,300030,V4 no memory,1,2,0,2,2,1
+default,default,41,300030,V4 memory,1,2,0,2,2,1
+default,default,41,300031,Random,0,100,10,16,0,0
+default,default,41,300031,V3.1 masked,1,10,0,11,5,0
+default,default,41,300031,V4 no memory,1,10,0,11,5,0
+default,default,41,300031,V4 memory,1,12,0,12,7,0
+default,default,41,300032,Random,0,100,32,11,18,0
+default,default,41,300032,V3.1 masked,1,8,0,9,7,0
+default,default,41,300032,V4 no memory,1,8,0,9,7,0
+default,default,41,300032,V4 memory,1,8,0,9,7,0
+default,default,41,300033,Random,0,100,25,11,0,0
+default,default,41,300033,V3.1 masked,0,100,0,5,0,0
+default,default,41,300033,V4 no memory,0,100,0,4,0,0
+default,default,41,300033,V4 memory,0,100,0,6,0,0
+default,default,41,300034,Random,0,100,28,27,0,0
+default,default,41,300034,V3.1 masked,1,11,0,12,2,0
+default,default,41,300034,V4 no memory,0,100,0,8,0,0
+default,default,41,300034,V4 memory,0,100,0,3,0,0
+default,default,41,300035,Random,0,100,30,14,1,1
+default,default,41,300035,V3.1 masked,0,100,0,5,1,1
+default,default,41,300035,V4 no memory,1,8,0,9,4,1
+default,default,41,300035,V4 memory,0,100,0,3,1,1
+default,default,41,300036,Random,0,100,32,21,0,0
+default,default,41,300036,V3.1 masked,0,100,0,7,0,0
+default,default,41,300036,V4 no memory,0,100,0,9,0,0
+default,default,41,300036,V4 memory,1,13,0,13,1,0
+default,default,41,300037,Random,0,100,29,22,0,0
+default,default,41,300037,V3.1 masked,0,100,0,2,0,0
+default,default,41,300037,V4 no memory,0,100,0,4,0,0
+default,default,41,300037,V4 memory,0,100,0,7,0,0
+default,default,41,300038,Random,0,100,32,18,0,0
+default,default,41,300038,V3.1 masked,0,100,0,4,0,0
+default,default,41,300038,V4 no memory,0,100,0,3,0,0
+default,default,41,300038,V4 memory,1,7,0,7,1,0
+default,default,41,300039,Random,0,100,24,15,31,0
+default,default,41,300039,V3.1 masked,1,7,0,8,5,0
+default,default,41,300039,V4 no memory,1,7,0,8,5,0
+default,default,41,300039,V4 memory,0,100,0,4,50,0
+default,default,41,300040,Random,0,100,24,15,23,1
+default,default,41,300040,V3.1 masked,1,8,0,9,7,1
+default,default,41,300040,V4 no memory,1,8,0,9,7,1
+default,default,41,300040,V4 memory,1,10,0,11,7,1
+default,default,41,300041,Random,0,100,26,12,0,0
+default,default,41,300041,V3.1 masked,0,100,0,3,0,0
+default,default,41,300041,V4 no memory,0,100,0,5,0,0
+default,default,41,300041,V4 memory,1,8,0,9,2,0
+default,default,41,300042,Random,0,100,27,15,34,1
+default,default,41,300042,V3.1 masked,1,4,0,5,4,1
+default,default,41,300042,V4 no memory,1,4,0,5,4,1
+default,default,41,300042,V4 memory,1,6,0,7,6,1
+default,default,41,300043,Random,0,100,22,20,0,0
+default,default,41,300043,V3.1 masked,0,100,0,5,0,0
+default,default,41,300043,V4 no memory,0,100,0,3,0,0
+default,default,41,300043,V4 memory,0,100,0,4,0,0
+default,default,41,300044,Random,0,100,12,15,0,0
+default,default,41,300044,V3.1 masked,1,11,0,12,5,0
+default,default,41,300044,V4 no memory,0,100,0,6,0,0
+default,default,41,300044,V4 memory,1,11,0,12,5,0
+default,default,41,300045,Random,1,1,0,2,1,1
+default,default,41,300045,V3.1 masked,1,1,0,2,1,1
+default,default,41,300045,V4 no memory,1,1,0,2,1,1
+default,default,41,300045,V4 memory,1,1,0,2,1,1
+default,default,41,300046,Random,0,100,26,16,0,0
+default,default,41,300046,V3.1 masked,1,10,0,11,5,0
+default,default,41,300046,V4 no memory,0,100,0,5,0,0
+default,default,41,300046,V4 memory,0,100,0,2,0,0
+default,default,41,300047,Random,1,44,13,9,43,1
+default,default,41,300047,V3.1 masked,1,1,0,2,1,1
+default,default,41,300047,V4 no memory,1,1,0,2,1,1
+default,default,41,300047,V4 memory,1,1,0,2,1,1
+default,default,41,300048,Random,1,38,9,12,38,1
+default,default,41,300048,V3.1 masked,1,3,0,4,3,1
+default,default,41,300048,V4 no memory,1,3,0,4,3,1
+default,default,41,300048,V4 memory,0,100,0,3,100,1
+default,default,41,300049,Random,0,100,21,25,0,0
+default,default,41,300049,V3.1 masked,1,10,0,11,3,0
+default,default,41,300049,V4 no memory,0,100,0,6,0,0
+default,default,41,300049,V4 memory,0,100,0,4,0,0
+default,default,41,300050,Random,0,100,23,31,25,1
+default,default,41,300050,V3.1 masked,1,4,0,5,4,1
+default,default,41,300050,V4 no memory,0,100,0,7,4,1
+default,default,41,300050,V4 memory,0,100,0,3,100,1
+default,default,41,300051,Random,0,100,21,12,0,0
+default,default,41,300051,V3.1 masked,0,100,0,5,0,0
+default,default,41,300051,V4 no memory,0,100,0,7,0,0
+default,default,41,300051,V4 memory,0,100,0,11,0,0
+default,default,41,300052,Random,1,10,2,7,10,1
+default,default,41,300052,V3.1 masked,1,4,0,5,4,1
+default,default,41,300052,V4 no memory,0,100,0,7,4,1
+default,default,41,300052,V4 memory,0,100,0,5,100,1
+default,default,41,300053,Random,0,100,31,11,40,1
+default,default,41,300053,V3.1 masked,1,8,0,9,6,1
+default,default,41,300053,V4 no memory,1,8,0,9,7,1
+default,default,41,300053,V4 memory,1,8,0,9,8,1
+default,default,41,300054,Random,0,100,21,12,0,0
+default,default,41,300054,V3.1 masked,0,100,0,6,0,0
+default,default,41,300054,V4 no memory,0,100,0,4,0,0
+default,default,41,300054,V4 memory,0,100,0,10,0,0
+default,default,41,300055,Random,0,100,25,17,1,0
+default,default,41,300055,V3.1 masked,1,7,0,8,5,0
+default,default,41,300055,V4 no memory,1,7,0,8,5,0
+default,default,41,300055,V4 memory,0,100,0,3,0,0
+default,default,41,300056,Random,0,100,39,11,100,1
+default,default,41,300056,V3.1 masked,1,3,0,4,3,1
+default,default,41,300056,V4 no memory,1,3,0,4,3,1
+default,default,41,300056,V4 memory,0,100,0,4,100,1
+default,default,41,300057,Random,0,100,27,16,4,0
+default,default,41,300057,V3.1 masked,1,12,0,13,6,0
+default,default,41,300057,V4 no memory,1,12,0,13,6,0
+default,default,41,300057,V4 memory,1,12,0,13,6,0
+default,default,41,300058,Random,1,2,0,3,2,1
+default,default,41,300058,V3.1 masked,1,1,0,2,1,1
+default,default,41,300058,V4 no memory,1,1,0,2,1,1
+default,default,41,300058,V4 memory,1,1,0,2,1,1
+default,default,41,300059,Random,0,100,35,11,50,0
+default,default,41,300059,V3.1 masked,1,7,0,8,6,0
+default,default,41,300059,V4 no memory,1,7,0,8,6,0
+default,default,41,300059,V4 memory,1,7,0,8,6,0
+default,default,41,300060,Random,0,100,25,16,0,0
+default,default,41,300060,V3.1 masked,1,12,0,13,5,0
+default,default,41,300060,V4 no memory,0,100,0,7,0,0
+default,default,41,300060,V4 memory,0,100,0,5,0,0
+default,default,41,300061,Random,0,100,34,23,0,0
+default,default,41,300061,V3.1 masked,0,100,0,6,0,0
+default,default,41,300061,V4 no memory,0,100,0,8,0,0
+default,default,41,300061,V4 memory,0,100,0,5,0,0
+default,default,41,300062,Random,0,100,19,20,1,0
+default,default,41,300062,V3.1 masked,1,8,0,9,3,0
+default,default,41,300062,V4 no memory,0,100,0,6,1,0
+default,default,41,300062,V4 memory,0,100,0,6,1,0
+default,default,41,300063,Random,0,100,22,15,16,1
+default,default,41,300063,V3.1 masked,1,6,0,7,5,1
+default,default,41,300063,V4 no memory,1,6,0,7,5,1
+default,default,41,300063,V4 memory,1,6,0,7,6,1
+default,default,41,300064,Random,0,100,36,14,0,0
+default,default,41,300064,V3.1 masked,1,11,0,12,2,0
+default,default,41,300064,V4 no memory,0,100,0,8,0,0
+default,default,41,300064,V4 memory,0,100,0,3,0,0
+default,default,41,300065,Random,0,100,41,24,1,1
+default,default,41,300065,V3.1 masked,1,3,0,4,3,1
+default,default,41,300065,V4 no memory,1,3,0,4,3,1
+default,default,41,300065,V4 memory,1,5,0,5,2,1
+default,default,41,300066,Random,0,100,25,21,0,0
+default,default,41,300066,V3.1 masked,1,11,0,12,2,0
+default,default,41,300066,V4 no memory,0,100,0,8,0,0
+default,default,41,300066,V4 memory,0,100,0,3,0,0
+default,default,41,300067,Random,0,100,34,25,22,0
+default,default,41,300067,V3.1 masked,0,100,0,4,0,0
+default,default,41,300067,V4 no memory,0,100,0,6,0,0
+default,default,41,300067,V4 memory,0,100,0,2,0,0
+default,default,41,300068,Random,0,100,31,12,1,1
+default,default,41,300068,V3.1 masked,1,4,0,5,4,1
+default,default,41,300068,V4 no memory,1,4,0,5,4,1
+default,default,41,300068,V4 memory,0,100,0,4,100,1
+default,default,41,300069,Random,0,100,15,15,0,0
+default,default,41,300069,V3.1 masked,1,9,0,10,2,0
+default,default,41,300069,V4 no memory,0,100,0,6,0,0
+default,default,41,300069,V4 memory,0,100,0,4,0,0
+default,default,41,300070,Random,1,6,3,4,6,1
+default,default,41,300070,V3.1 masked,1,3,0,4,3,1
+default,default,41,300070,V4 no memory,1,3,0,4,3,1
+default,default,41,300070,V4 memory,0,100,0,3,100,1
+default,default,41,300071,Random,0,100,27,33,0,0
+default,default,41,300071,V3.1 masked,0,100,0,7,0,0
+default,default,41,300071,V4 no memory,0,100,0,9,0,0
+default,default,41,300071,V4 memory,0,100,0,9,0,0
+default,default,41,300072,Random,1,5,1,5,4,0
+default,default,41,300072,V3.1 masked,1,5,0,5,3,0
+default,default,41,300072,V4 no memory,0,100,0,7,4,0
+default,default,41,300072,V4 memory,1,7,0,2,6,0
+default,default,41,300073,Random,0,100,27,12,0,0
+default,default,41,300073,V3.1 masked,1,8,0,9,5,0
+default,default,41,300073,V4 no memory,1,8,0,9,5,0
+default,default,41,300073,V4 memory,1,10,0,11,7,0
+default,default,41,300074,Random,0,100,28,14,0,0
+default,default,41,300074,V3.1 masked,1,12,0,13,2,0
+default,default,41,300074,V4 no memory,0,100,0,9,0,0
+default,default,41,300074,V4 memory,0,100,0,10,0,0
+default,default,41,300075,Random,1,28,3,14,3,0
+default,default,41,300075,V3.1 masked,1,9,0,10,5,0
+default,default,41,300075,V4 no memory,1,9,0,10,5,0
+default,default,41,300075,V4 memory,0,100,0,5,0,0
+default,default,41,300076,Random,0,100,31,21,49,0
+default,default,41,300076,V3.1 masked,1,6,0,7,1,0
+default,default,41,300076,V4 no memory,0,100,0,5,1,0
+default,default,41,300076,V4 memory,1,6,0,7,1,0
+default,default,41,300077,Random,0,100,26,17,26,0
+default,default,41,300077,V3.1 masked,1,9,0,10,7,0
+default,default,41,300077,V4 no memory,1,9,0,10,5,0
+default,default,41,300077,V4 memory,0,100,0,3,50,0
+default,default,41,300078,Random,0,100,20,20,1,0
+default,default,41,300078,V3.1 masked,1,4,0,5,1,0
+default,default,41,300078,V4 no memory,0,100,0,3,1,0
+default,default,41,300078,V4 memory,0,100,0,3,0,0
+default,default,41,300079,Random,0,100,32,16,20,1
+default,default,41,300079,V3.1 masked,1,6,0,7,6,1
+default,default,41,300079,V4 no memory,1,6,0,7,6,1
+default,default,41,300079,V4 memory,1,8,0,8,8,1
+default,default,41,300080,Random,0,100,43,11,26,0
+default,default,41,300080,V3.1 masked,1,7,0,8,5,0
+default,default,41,300080,V4 no memory,1,7,0,8,6,0
+default,default,41,300080,V4 memory,1,7,0,8,6,0
+default,default,41,300081,Random,1,44,9,20,35,0
+default,default,41,300081,V3.1 masked,1,7,0,8,5,0
+default,default,41,300081,V4 no memory,1,7,0,8,5,0
+default,default,41,300081,V4 memory,1,7,0,8,5,0
+default,default,41,300082,Random,0,100,21,16,22,0
+default,default,41,300082,V3.1 masked,1,9,0,10,5,0
+default,default,41,300082,V4 no memory,1,9,0,10,5,0
+default,default,41,300082,V4 memory,0,100,0,3,0,0
+default,default,41,300083,Random,1,1,0,2,0,0
+default,default,41,300083,V3.1 masked,1,1,0,2,0,0
+default,default,41,300083,V4 no memory,0,100,0,3,1,0
+default,default,41,300083,V4 memory,0,100,0,2,1,0
+default,default,41,300084,Random,0,100,21,16,27,0
+default,default,41,300084,V3.1 masked,1,7,0,8,4,0
+default,default,41,300084,V4 no memory,1,7,0,8,6,0
+default,default,41,300084,V4 memory,0,100,0,12,5,0
+default,default,41,300085,Random,1,45,10,13,43,0
+default,default,41,300085,V3.1 masked,1,7,0,8,5,0
+default,default,41,300085,V4 no memory,1,7,0,8,5,0
+default,default,41,300085,V4 memory,0,100,0,2,0,0
+default,default,41,300086,Random,1,42,8,18,17,0
+default,default,41,300086,V3.1 masked,0,100,0,9,0,0
+default,default,41,300086,V4 no memory,1,12,0,13,3,0
+default,default,41,300086,V4 memory,0,100,0,16,89,0
+default,default,41,300087,Random,0,100,22,21,0,0
+default,default,41,300087,V3.1 masked,1,11,0,12,2,0
+default,default,41,300087,V4 no memory,0,100,0,8,0,0
+default,default,41,300087,V4 memory,0,100,0,9,0,0
+default,default,41,300088,Random,1,1,0,2,1,1
+default,default,41,300088,V3.1 masked,1,1,0,2,1,1
+default,default,41,300088,V4 no memory,1,1,0,2,1,1
+default,default,41,300088,V4 memory,1,1,0,2,1,1
+default,default,41,300089,Random,0,100,20,16,0,0
+default,default,41,300089,V3.1 masked,0,100,0,7,0,0
+default,default,41,300089,V4 no memory,0,100,0,5,0,0
+default,default,41,300089,V4 memory,0,100,0,2,0,0
+default,default,41,300090,Random,1,3,1,3,0,0
+default,default,41,300090,V3.1 masked,1,4,0,4,2,0
+default,default,41,300090,V4 no memory,0,100,0,2,1,0
+default,default,41,300090,V4 memory,1,4,0,3,1,0
+default,default,41,300091,Random,0,100,31,23,0,0
+default,default,41,300091,V3.1 masked,1,10,0,11,5,0
+default,default,41,300091,V4 no memory,0,100,0,5,0,0
+default,default,41,300091,V4 memory,0,100,0,11,0,0
+default,default,41,300092,Random,0,100,35,10,0,0
+default,default,41,300092,V3.1 masked,0,100,0,5,0,0
+default,default,41,300092,V4 no memory,1,8,0,9,3,0
+default,default,41,300092,V4 memory,1,10,0,10,3,0
+default,default,41,300093,Random,0,100,28,30,55,0
+default,default,41,300093,V3.1 masked,1,7,0,8,6,0
+default,default,41,300093,V4 no memory,1,7,0,8,6,0
+default,default,41,300093,V4 memory,1,7,0,8,6,0
+default,default,41,300094,Random,0,100,30,11,0,0
+default,default,41,300094,V3.1 masked,0,100,0,7,0,0
+default,default,41,300094,V4 no memory,0,100,0,9,0,0
+default,default,41,300094,V4 memory,0,100,0,9,0,0
+default,default,41,300095,Random,1,5,0,5,2,0
+default,default,41,300095,V3.1 masked,1,5,0,5,2,0
+default,default,41,300095,V4 no memory,1,4,0,5,0,0
+default,default,41,300095,V4 memory,1,5,0,5,2,0
+default,default,41,300096,Random,0,100,20,17,0,0
+default,default,41,300096,V3.1 masked,1,10,0,11,5,0
+default,default,41,300096,V4 no memory,0,100,0,5,0,0
+default,default,41,300096,V4 memory,0,100,0,3,0,0
+default,default,41,300097,Random,0,100,25,13,0,0
+default,default,41,300097,V3.1 masked,1,8,0,7,4,0
+default,default,41,300097,V4 no memory,1,4,0,5,0,0
+default,default,41,300097,V4 memory,1,4,0,5,0,0
+default,default,41,300098,Random,0,100,36,16,0,0
+default,default,41,300098,V3.1 masked,1,5,0,6,2,0
+default,default,41,300098,V4 no memory,0,100,0,6,49,0
+default,default,41,300098,V4 memory,0,100,0,3,0,0
+default,default,41,300099,Random,0,100,21,16,1,0
+default,default,41,300099,V3.1 masked,0,100,0,6,0,0
+default,default,41,300099,V4 no memory,1,9,0,10,3,0
+default,default,41,300099,V4 memory,1,11,0,11,3,0
+default,default,42,300000,Random,0,100,32,17,0,0
+default,default,42,300000,V3.1 masked,1,12,0,13,5,0
+default,default,42,300000,V4 no memory,0,100,0,5,0,0
+default,default,42,300000,V4 memory,1,12,0,13,5,0
+default,default,42,300001,Random,0,100,22,14,2,0
+default,default,42,300001,V3.1 masked,0,100,0,4,0,0
+default,default,42,300001,V4 no memory,0,100,0,6,0,0
+default,default,42,300001,V4 memory,0,100,0,5,0,0
+default,default,42,300002,Random,1,3,0,3,3,1
+default,default,42,300002,V3.1 masked,1,1,0,2,1,1
+default,default,42,300002,V4 no memory,1,1,0,2,1,1
+default,default,42,300002,V4 memory,1,1,0,2,1,1
+default,default,42,300003,Random,0,100,22,21,4,0
+default,default,42,300003,V3.1 masked,0,100,0,3,0,0
+default,default,42,300003,V4 no memory,1,11,0,12,6,0
+default,default,42,300003,V4 memory,1,11,0,12,6,0
+default,default,42,300004,Random,0,100,23,18,0,0
+default,default,42,300004,V3.1 masked,0,100,0,3,0,0
+default,default,42,300004,V4 no memory,1,9,0,10,5,0
+default,default,42,300004,V4 memory,1,9,0,10,5,0
+default,default,42,300005,Random,0,100,36,11,0,0
+default,default,42,300005,V3.1 masked,0,100,0,6,0,0
+default,default,42,300005,V4 no memory,0,100,0,9,0,0
+default,default,42,300005,V4 memory,0,100,0,10,0,0
+default,default,42,300006,Random,0,100,18,21,92,0
+default,default,42,300006,V3.1 masked,1,8,0,9,7,0
+default,default,42,300006,V4 no memory,1,8,0,9,7,0
+default,default,42,300006,V4 memory,1,8,0,9,7,0
+default,default,42,300007,Random,0,100,25,18,41,1
+default,default,42,300007,V3.1 masked,1,4,0,5,4,1
+default,default,42,300007,V4 no memory,1,4,0,5,4,1
+default,default,42,300007,V4 memory,1,4,0,5,4,1
+default,default,42,300008,Random,0,100,22,13,0,0
+default,default,42,300008,V3.1 masked,1,7,0,8,3,0
+default,default,42,300008,V4 no memory,0,100,0,4,0,0
+default,default,42,300008,V4 memory,1,9,0,9,4,0
+default,default,42,300009,Random,1,49,15,16,17,0
+default,default,42,300009,V3.1 masked,0,100,0,3,0,0
+default,default,42,300009,V4 no memory,0,100,0,5,0,0
+default,default,42,300009,V4 memory,0,100,0,8,0,0
+default,default,42,300010,Random,1,7,0,8,7,1
+default,default,42,300010,V3.1 masked,1,5,0,6,5,1
+default,default,42,300010,V4 no memory,1,5,0,6,5,1
+default,default,42,300010,V4 memory,1,5,0,6,5,1
+default,default,42,300011,Random,0,100,24,21,15,0
+default,default,42,300011,V3.1 masked,0,100,0,3,0,0
+default,default,42,300011,V4 no memory,1,7,0,8,5,0
+default,default,42,300011,V4 memory,0,100,0,2,0,0
+default,default,42,300012,Random,1,80,24,16,80,1
+default,default,42,300012,V3.1 masked,1,4,0,5,4,1
+default,default,42,300012,V4 no memory,1,4,0,5,4,1
+default,default,42,300012,V4 memory,1,4,0,5,4,1
+default,default,42,300013,Random,0,100,25,15,0,0
+default,default,42,300013,V3.1 masked,1,5,0,6,1,0
+default,default,42,300013,V4 no memory,1,5,0,6,1,0
+default,default,42,300013,V4 memory,0,100,0,5,48,0
+default,default,42,300014,Random,0,100,20,21,50,0
+default,default,42,300014,V3.1 masked,1,10,0,11,8,0
+default,default,42,300014,V4 no memory,1,10,0,11,8,0
+default,default,42,300014,V4 memory,0,100,0,11,98,0
+default,default,42,300015,Random,0,100,23,20,17,0
+default,default,42,300015,V3.1 masked,1,10,0,11,4,0
+default,default,42,300015,V4 no memory,1,10,0,11,4,0
+default,default,42,300015,V4 memory,1,10,0,11,4,0
+default,default,42,300016,Random,0,100,27,10,0,0
+default,default,42,300016,V3.1 masked,0,100,0,7,0,0
+default,default,42,300016,V4 no memory,0,100,0,10,0,0
+default,default,42,300016,V4 memory,0,100,0,11,0,0
+default,default,42,300017,Random,1,17,3,10,17,1
+default,default,42,300017,V3.1 masked,1,4,0,5,4,1
+default,default,42,300017,V4 no memory,1,4,0,5,4,1
+default,default,42,300017,V4 memory,1,4,0,5,4,1
+default,default,42,300018,Random,0,100,28,17,22,1
+default,default,42,300018,V3.1 masked,1,8,0,9,7,1
+default,default,42,300018,V4 no memory,1,8,0,9,7,1
+default,default,42,300018,V4 memory,1,8,0,9,7,1
+default,default,42,300019,Random,1,43,10,18,25,0
+default,default,42,300019,V3.1 masked,1,9,0,10,5,0
+default,default,42,300019,V4 no memory,1,9,0,10,5,0
+default,default,42,300019,V4 memory,1,9,0,10,5,0
+default,default,42,300020,Random,0,100,34,20,0,0
+default,default,42,300020,V3.1 masked,0,100,0,4,0,0
+default,default,42,300020,V4 no memory,0,100,0,6,0,0
+default,default,42,300020,V4 memory,0,100,0,10,0,0
+default,default,42,300021,Random,0,100,27,24,10,0
+default,default,42,300021,V3.1 masked,1,8,0,9,6,0
+default,default,42,300021,V4 no memory,1,8,0,9,6,0
+default,default,42,300021,V4 memory,1,8,0,9,5,0
+default,default,42,300022,Random,1,2,0,3,2,1
+default,default,42,300022,V3.1 masked,1,3,0,2,3,1
+default,default,42,300022,V4 no memory,1,3,0,2,3,1
+default,default,42,300022,V4 memory,1,3,0,3,3,1
+default,default,42,300023,Random,1,2,2,1,2,1
+default,default,42,300023,V3.1 masked,1,1,0,2,1,1
+default,default,42,300023,V4 no memory,1,1,0,2,1,1
+default,default,42,300023,V4 memory,1,1,0,2,1,1
+default,default,42,300024,Random,1,3,0,3,3,1
+default,default,42,300024,V3.1 masked,1,2,0,3,2,1
+default,default,42,300024,V4 no memory,1,2,0,3,2,1
+default,default,42,300024,V4 memory,1,3,0,2,3,1
+default,default,42,300025,Random,0,100,24,14,0,0
+default,default,42,300025,V3.1 masked,1,12,0,13,5,0
+default,default,42,300025,V4 no memory,0,100,0,5,0,0
+default,default,42,300025,V4 memory,1,12,0,13,5,0
+default,default,42,300026,Random,0,100,22,18,46,0
+default,default,42,300026,V3.1 masked,1,10,0,11,5,0
+default,default,42,300026,V4 no memory,0,100,0,5,0,0
+default,default,42,300026,V4 memory,1,10,0,11,5,0
+default,default,42,300027,Random,0,100,17,28,0,0
+default,default,42,300027,V3.1 masked,1,11,0,12,5,0
+default,default,42,300027,V4 no memory,0,100,0,4,0,0
+default,default,42,300027,V4 memory,1,11,0,12,5,0
+default,default,42,300028,Random,0,100,23,20,0,0
+default,default,42,300028,V3.1 masked,1,12,0,13,5,0
+default,default,42,300028,V4 no memory,0,100,0,7,0,0
+default,default,42,300028,V4 memory,0,100,0,3,0,0
+default,default,42,300029,Random,0,100,36,10,0,0
+default,default,42,300029,V3.1 masked,0,100,0,8,0,0
+default,default,42,300029,V4 no memory,1,16,0,17,6,0
+default,default,42,300029,V4 memory,1,18,0,18,8,0
+default,default,42,300030,Random,1,1,0,2,1,1
+default,default,42,300030,V3.1 masked,1,1,0,2,1,1
+default,default,42,300030,V4 no memory,1,1,0,2,1,1
+default,default,42,300030,V4 memory,1,1,0,2,1,1
+default,default,42,300031,Random,0,100,10,16,0,0
+default,default,42,300031,V3.1 masked,1,8,0,9,2,0
+default,default,42,300031,V4 no memory,1,8,0,9,2,0
+default,default,42,300031,V4 memory,0,100,0,8,48,0
+default,default,42,300032,Random,0,100,32,11,2,0
+default,default,42,300032,V3.1 masked,1,5,0,6,1,0
+default,default,42,300032,V4 no memory,1,5,0,6,1,0
+default,default,42,300032,V4 memory,1,5,0,6,1,0
+default,default,42,300033,Random,0,100,25,11,27,0
+default,default,42,300033,V3.1 masked,0,100,0,6,0,0
+default,default,42,300033,V4 no memory,1,9,0,10,6,0
+default,default,42,300033,V4 memory,1,17,0,14,6,0
+default,default,42,300034,Random,0,100,28,27,0,0
+default,default,42,300034,V3.1 masked,1,14,0,15,5,0
+default,default,42,300034,V4 no memory,0,100,0,8,0,0
+default,default,42,300034,V4 memory,0,100,0,9,0,0
+default,default,42,300035,Random,0,100,30,14,1,1
+default,default,42,300035,V3.1 masked,0,100,0,4,1,1
+default,default,42,300035,V4 no memory,1,11,0,12,6,1
+default,default,42,300035,V4 memory,1,11,0,12,6,1
+default,default,42,300036,Random,0,100,32,21,0,0
+default,default,42,300036,V3.1 masked,0,100,0,6,0,0
+default,default,42,300036,V4 no memory,1,14,0,15,6,0
+default,default,42,300036,V4 memory,1,14,0,15,6,0
+default,default,42,300037,Random,0,100,29,22,0,0
+default,default,42,300037,V3.1 masked,1,8,0,7,5,0
+default,default,42,300037,V4 no memory,0,100,0,4,0,0
+default,default,42,300037,V4 memory,1,12,0,10,5,0
+default,default,42,300038,Random,0,100,32,18,13,0
+default,default,42,300038,V3.1 masked,0,100,0,5,0,0
+default,default,42,300038,V4 no memory,1,8,0,9,6,0
+default,default,42,300038,V4 memory,0,100,0,3,0,0
+default,default,42,300039,Random,0,100,24,15,0,0
+default,default,42,300039,V3.1 masked,1,5,0,6,1,0
+default,default,42,300039,V4 no memory,1,5,0,6,1,0
+default,default,42,300039,V4 memory,0,100,0,5,48,0
+default,default,42,300040,Random,1,39,8,14,39,1
+default,default,42,300040,V3.1 masked,1,2,0,3,2,1
+default,default,42,300040,V4 no memory,1,3,0,2,3,1
+default,default,42,300040,V4 memory,1,3,0,2,3,1
+default,default,42,300041,Random,0,100,26,12,0,0
+default,default,42,300041,V3.1 masked,0,100,0,3,0,0
+default,default,42,300041,V4 no memory,0,100,0,5,0,0
+default,default,42,300041,V4 memory,1,11,0,12,6,0
+default,default,42,300042,Random,1,63,14,10,63,1
+default,default,42,300042,V3.1 masked,1,1,0,2,1,1
+default,default,42,300042,V4 no memory,1,1,0,2,1,1
+default,default,42,300042,V4 memory,1,1,0,2,1,1
+default,default,42,300043,Random,0,100,22,20,7,0
+default,default,42,300043,V3.1 masked,0,100,0,6,0,0
+default,default,42,300043,V4 no memory,0,100,0,4,0,0
+default,default,42,300043,V4 memory,1,18,0,15,6,0
+default,default,42,300044,Random,0,100,12,15,0,0
+default,default,42,300044,V3.1 masked,1,10,0,11,5,0
+default,default,42,300044,V4 no memory,1,10,0,11,5,0
+default,default,42,300044,V4 memory,1,10,0,11,5,0
+default,default,42,300045,Random,0,100,26,22,47,1
+default,default,42,300045,V3.1 masked,1,2,0,3,2,1
+default,default,42,300045,V4 no memory,1,2,0,3,2,1
+default,default,42,300045,V4 memory,1,2,0,3,2,1
+default,default,42,300046,Random,0,100,26,16,0,0
+default,default,42,300046,V3.1 masked,1,9,0,10,5,0
+default,default,42,300046,V4 no memory,1,9,0,10,5,0
+default,default,42,300046,V4 memory,1,9,0,10,5,0
+default,default,42,300047,Random,1,24,5,7,18,1
+default,default,42,300047,V3.1 masked,1,1,0,2,1,1
+default,default,42,300047,V4 no memory,1,1,0,2,1,1
+default,default,42,300047,V4 memory,1,1,0,2,1,1
+default,default,42,300048,Random,1,10,2,5,10,1
+default,default,42,300048,V3.1 masked,1,1,0,2,1,1
+default,default,42,300048,V4 no memory,1,1,0,2,1,1
+default,default,42,300048,V4 memory,1,1,0,2,1,1
+default,default,42,300049,Random,0,100,21,25,22,0
+default,default,42,300049,V3.1 masked,1,9,0,10,3,0
+default,default,42,300049,V4 no memory,0,100,0,6,0,0
+default,default,42,300049,V4 memory,1,11,0,11,4,0
+default,default,42,300050,Random,0,100,23,31,35,1
+default,default,42,300050,V3.1 masked,1,2,0,3,2,1
+default,default,42,300050,V4 no memory,1,2,0,3,2,1
+default,default,42,300050,V4 memory,1,3,0,4,3,1
+default,default,42,300051,Random,0,100,21,12,0,0
+default,default,42,300051,V3.1 masked,0,100,0,5,0,0
+default,default,42,300051,V4 no memory,0,100,0,7,0,0
+default,default,42,300051,V4 memory,0,100,0,12,0,0
+default,default,42,300052,Random,1,2,1,2,2,1
+default,default,42,300052,V3.1 masked,1,1,0,2,1,1
+default,default,42,300052,V4 no memory,1,1,0,2,1,1
+default,default,42,300052,V4 memory,1,3,0,3,3,1
+default,default,42,300053,Random,1,15,4,6,15,1
+default,default,42,300053,V3.1 masked,1,5,0,4,5,1
+default,default,42,300053,V4 no memory,1,5,0,4,5,1
+default,default,42,300053,V4 memory,1,7,0,3,7,1
+default,default,42,300054,Random,0,100,21,12,0,0
+default,default,42,300054,V3.1 masked,1,11,0,12,5,0
+default,default,42,300054,V4 no memory,0,100,0,4,0,0
+default,default,42,300054,V4 memory,1,11,0,12,5,0
+default,default,42,300055,Random,0,100,25,17,0,0
+default,default,42,300055,V3.1 masked,1,5,0,6,2,0
+default,default,42,300055,V4 no memory,1,5,0,6,2,0
+default,default,42,300055,V4 memory,0,100,0,4,49,0
+default,default,42,300056,Random,1,2,2,1,2,1
+default,default,42,300056,V3.1 masked,1,1,0,2,1,1
+default,default,42,300056,V4 no memory,1,2,0,2,2,1
+default,default,42,300056,V4 memory,1,4,0,3,4,1
+default,default,42,300057,Random,0,100,27,16,18,0
+default,default,42,300057,V3.1 masked,1,10,0,11,5,0
+default,default,42,300057,V4 no memory,1,10,0,11,5,0
+default,default,42,300057,V4 memory,1,10,0,11,5,0
+default,default,42,300058,Random,1,8,1,7,8,1
+default,default,42,300058,V3.1 masked,1,1,0,2,1,1
+default,default,42,300058,V4 no memory,1,1,0,2,1,1
+default,default,42,300058,V4 memory,1,1,0,2,1,1
+default,default,42,300059,Random,0,100,35,11,2,0
+default,default,42,300059,V3.1 masked,1,4,0,5,3,0
+default,default,42,300059,V4 no memory,1,4,0,5,3,0
+default,default,42,300059,V4 memory,1,6,0,5,2,0
+default,default,42,300060,Random,0,100,25,16,0,0
+default,default,42,300060,V3.1 masked,1,11,0,12,5,0
+default,default,42,300060,V4 no memory,1,11,0,12,5,0
+default,default,42,300060,V4 memory,1,11,0,12,5,0
+default,default,42,300061,Random,0,100,34,23,0,0
+default,default,42,300061,V3.1 masked,0,100,0,6,0,0
+default,default,42,300061,V4 no memory,0,100,0,8,0,0
+default,default,42,300061,V4 memory,0,100,0,11,0,0
+default,default,42,300062,Random,0,100,19,20,0,0
+default,default,42,300062,V3.1 masked,1,11,0,12,5,0
+default,default,42,300062,V4 no memory,0,100,0,6,0,0
+default,default,42,300062,V4 memory,0,100,0,6,0,0
+default,default,42,300063,Random,1,2,0,3,2,1
+default,default,42,300063,V3.1 masked,1,3,0,2,3,1
+default,default,42,300063,V4 no memory,1,3,0,2,3,1
+default,default,42,300063,V4 memory,1,5,0,5,5,1
+default,default,42,300064,Random,0,100,36,14,0,0
+default,default,42,300064,V3.1 masked,1,14,0,15,5,0
+default,default,42,300064,V4 no memory,0,100,0,8,0,0
+default,default,42,300064,V4 memory,0,100,0,9,0,0
+default,default,42,300065,Random,0,100,41,24,10,1
+default,default,42,300065,V3.1 masked,1,6,0,7,6,1
+default,default,42,300065,V4 no memory,1,6,0,7,6,1
+default,default,42,300065,V4 memory,1,6,0,7,6,1
+default,default,42,300066,Random,0,100,25,21,0,0
+default,default,42,300066,V3.1 masked,1,14,0,15,5,0
+default,default,42,300066,V4 no memory,0,100,0,8,0,0
+default,default,42,300066,V4 memory,0,100,0,9,0,0
+default,default,42,300067,Random,0,100,34,25,26,0
+default,default,42,300067,V3.1 masked,0,100,0,3,0,0
+default,default,42,300067,V4 no memory,1,11,0,12,6,0
+default,default,42,300067,V4 memory,1,11,0,12,6,0
+default,default,42,300068,Random,0,100,31,12,2,1
+default,default,42,300068,V3.1 masked,1,2,0,3,2,1
+default,default,42,300068,V4 no memory,1,2,0,3,2,1
+default,default,42,300068,V4 memory,1,2,0,3,2,1
+default,default,42,300069,Random,0,100,15,15,0,0
+default,default,42,300069,V3.1 masked,1,12,0,13,5,0
+default,default,42,300069,V4 no memory,0,100,0,6,0,0
+default,default,42,300069,V4 memory,1,12,0,13,5,0
+default,default,42,300070,Random,1,2,2,1,2,1
+default,default,42,300070,V3.1 masked,1,1,0,2,1,1
+default,default,42,300070,V4 no memory,1,1,0,2,1,1
+default,default,42,300070,V4 memory,1,1,0,2,1,1
+default,default,42,300071,Random,0,100,27,33,10,0
+default,default,42,300071,V3.1 masked,0,100,0,6,0,0
+default,default,42,300071,V4 no memory,1,14,0,15,6,0
+default,default,42,300071,V4 memory,1,16,0,16,6,0
+default,default,42,300072,Random,1,31,9,13,30,0
+default,default,42,300072,V3.1 masked,1,8,0,9,5,0
+default,default,42,300072,V4 no memory,1,8,0,9,6,0
+default,default,42,300072,V4 memory,1,8,0,9,5,0
+default,default,42,300073,Random,0,100,27,12,19,0
+default,default,42,300073,V3.1 masked,1,6,0,7,4,0
+default,default,42,300073,V4 no memory,1,6,0,7,4,0
+default,default,42,300073,V4 memory,0,100,0,9,4,0
+default,default,42,300074,Random,0,100,28,14,0,0
+default,default,42,300074,V3.1 masked,1,15,0,16,5,0
+default,default,42,300074,V4 no memory,0,100,0,9,0,0
+default,default,42,300074,V4 memory,1,15,0,16,5,0
+default,default,42,300075,Random,0,100,22,29,33,0
+default,default,42,300075,V3.1 masked,0,100,0,6,0,0
+default,default,42,300075,V4 no memory,1,12,0,13,5,0
+default,default,42,300075,V4 memory,1,12,0,13,5,0
+default,default,42,300076,Random,0,100,31,21,40,0
+default,default,42,300076,V3.1 masked,1,11,0,12,5,0
+default,default,42,300076,V4 no memory,0,100,0,6,0,0
+default,default,42,300076,V4 memory,0,100,0,6,0,0
+default,default,42,300077,Random,0,100,26,17,0,0
+default,default,42,300077,V3.1 masked,1,7,0,8,1,0
+default,default,42,300077,V4 no memory,1,7,0,8,1,0
+default,default,42,300077,V4 memory,1,7,0,8,1,0
+default,default,42,300078,Random,0,100,20,20,0,0
+default,default,42,300078,V3.1 masked,1,9,0,10,5,0
+default,default,42,300078,V4 no memory,0,100,0,3,0,0
+default,default,42,300078,V4 memory,1,9,0,10,5,0
+default,default,42,300079,Random,1,32,13,7,32,1
+default,default,42,300079,V3.1 masked,1,3,0,4,3,1
+default,default,42,300079,V4 no memory,1,4,0,4,3,1
+default,default,42,300079,V4 memory,1,4,0,5,1,1
+default,default,42,300080,Random,1,16,6,7,13,0
+default,default,42,300080,V3.1 masked,1,8,0,6,6,0
+default,default,42,300080,V4 no memory,1,4,0,5,2,0
+default,default,42,300080,V4 memory,1,8,0,6,6,0
+default,default,42,300081,Random,1,5,0,6,3,0
+default,default,42,300081,V3.1 masked,1,6,0,6,4,0
+default,default,42,300081,V4 no memory,1,6,0,6,4,0
+default,default,42,300081,V4 memory,1,4,0,3,2,0
+default,default,42,300082,Random,0,100,21,16,0,0
+default,default,42,300082,V3.1 masked,1,7,0,8,1,0
+default,default,42,300082,V4 no memory,1,7,0,8,1,0
+default,default,42,300082,V4 memory,1,7,0,8,1,0
+default,default,42,300083,Random,1,54,16,17,19,0
+default,default,42,300083,V3.1 masked,1,6,0,7,5,0
+default,default,42,300083,V4 no memory,0,100,0,3,0,0
+default,default,42,300083,V4 memory,0,100,0,2,0,0
+default,default,42,300084,Random,1,7,2,4,6,0
+default,default,42,300084,V3.1 masked,1,5,0,4,2,0
+default,default,42,300084,V4 no memory,1,5,0,5,2,0
+default,default,42,300084,V4 memory,1,10,0,10,7,0
+default,default,42,300085,Random,1,14,3,9,8,0
+default,default,42,300085,V3.1 masked,1,5,0,6,4,0
+default,default,42,300085,V4 no memory,1,5,0,6,4,0
+default,default,42,300085,V4 memory,1,5,0,6,4,0
+default,default,42,300086,Random,0,100,25,30,10,0
+default,default,42,300086,V3.1 masked,0,100,0,8,0,0
+default,default,42,300086,V4 no memory,1,15,0,16,5,0
+default,default,42,300086,V4 memory,1,15,0,16,5,0
+default,default,42,300087,Random,0,100,22,21,0,0
+default,default,42,300087,V3.1 masked,1,14,0,15,5,0
+default,default,42,300087,V4 no memory,0,100,0,8,0,0
+default,default,42,300087,V4 memory,1,14,0,15,5,0
+default,default,42,300088,Random,1,1,0,2,1,1
+default,default,42,300088,V3.1 masked,1,1,0,2,1,1
+default,default,42,300088,V4 no memory,1,1,0,2,1,1
+default,default,42,300088,V4 memory,1,1,0,2,1,1
+default,default,42,300089,Random,0,100,20,16,0,0
+default,default,42,300089,V3.1 masked,0,100,0,8,0,0
+default,default,42,300089,V4 no memory,0,100,0,5,0,0
+default,default,42,300089,V4 memory,0,100,0,8,0,0
+default,default,42,300090,Random,0,100,27,26,1,0
+default,default,42,300090,V3.1 masked,1,7,0,8,5,0
+default,default,42,300090,V4 no memory,0,100,0,2,0,0
+default,default,42,300090,V4 memory,0,100,0,2,0,0
+default,default,42,300091,Random,0,100,31,23,8,0
+default,default,42,300091,V3.1 masked,1,9,0,10,6,0
+default,default,42,300091,V4 no memory,1,9,0,10,6,0
+default,default,42,300091,V4 memory,0,100,0,10,95,0
+default,default,42,300092,Random,0,100,35,10,0,0
+default,default,42,300092,V3.1 masked,0,100,0,4,0,0
+default,default,42,300092,V4 no memory,1,11,0,12,5,0
+default,default,42,300092,V4 memory,1,13,0,13,5,0
+default,default,42,300093,Random,1,75,23,19,18,0
+default,default,42,300093,V3.1 masked,1,4,0,5,1,0
+default,default,42,300093,V4 no memory,1,4,0,5,1,0
+default,default,42,300093,V4 memory,1,4,0,5,1,0
+default,default,42,300094,Random,0,100,30,11,0,0
+default,default,42,300094,V3.1 masked,0,100,0,6,0,0
+default,default,42,300094,V4 no memory,0,100,0,9,0,0
+default,default,42,300094,V4 memory,0,100,0,10,1,0
+default,default,42,300095,Random,1,93,24,20,34,0
+default,default,42,300095,V3.1 masked,1,9,0,10,7,0
+default,default,42,300095,V4 no memory,1,9,0,10,7,0
+default,default,42,300095,V4 memory,1,9,0,10,7,0
+default,default,42,300096,Random,0,100,20,17,0,0
+default,default,42,300096,V3.1 masked,1,9,0,10,5,0
+default,default,42,300096,V4 no memory,1,9,0,10,5,0
+default,default,42,300096,V4 memory,1,11,0,11,6,0
+default,default,42,300097,Random,0,100,25,13,0,0
+default,default,42,300097,V3.1 masked,0,100,0,3,0,0
+default,default,42,300097,V4 no memory,1,9,0,10,5,0
+default,default,42,300097,V4 memory,1,9,0,10,5,0
+default,default,42,300098,Random,0,100,36,16,0,0
+default,default,42,300098,V3.1 masked,1,5,0,6,2,0
+default,default,42,300098,V4 no memory,1,5,0,6,2,0
+default,default,42,300098,V4 memory,1,5,0,6,2,0
+default,default,42,300099,Random,0,100,21,16,0,0
+default,default,42,300099,V3.1 masked,0,100,0,5,0,0
+default,default,42,300099,V4 no memory,1,12,0,13,5,0
+default,default,42,300099,V4 memory,1,12,0,13,5,0
+default,default,43,300000,Random,0,100,32,17,0,0
+default,default,43,300000,V3.1 masked,0,100,0,5,0,0
+default,default,43,300000,V4 no memory,0,100,0,5,0,0
+default,default,43,300000,V4 memory,0,100,0,7,0,0
+default,default,43,300001,Random,0,100,22,14,2,0
+default,default,43,300001,V3.1 masked,0,100,0,6,0,0
+default,default,43,300001,V4 no memory,0,100,0,6,0,0
+default,default,43,300001,V4 memory,0,100,0,6,0,0
+default,default,43,300002,Random,1,1,0,2,1,1
+default,default,43,300002,V3.1 masked,1,1,0,2,1,1
+default,default,43,300002,V4 no memory,1,1,0,2,1,1
+default,default,43,300002,V4 memory,1,1,0,2,1,1
+default,default,43,300003,Random,0,100,22,21,0,0
+default,default,43,300003,V3.1 masked,0,100,0,6,0,0
+default,default,43,300003,V4 no memory,0,100,0,6,0,0
+default,default,43,300003,V4 memory,0,100,0,8,0,0
+default,default,43,300004,Random,0,100,23,18,0,0
+default,default,43,300004,V3.1 masked,1,10,0,11,6,0
+default,default,43,300004,V4 no memory,1,10,0,11,6,0
+default,default,43,300004,V4 memory,1,10,0,11,6,0
+default,default,43,300005,Random,0,100,36,11,0,0
+default,default,43,300005,V3.1 masked,1,14,0,15,6,0
+default,default,43,300005,V4 no memory,1,14,0,15,6,0
+default,default,43,300005,V4 memory,0,100,0,14,92,0
+default,default,43,300006,Random,0,100,18,21,92,0
+default,default,43,300006,V3.1 masked,1,8,0,9,6,0
+default,default,43,300006,V4 no memory,1,8,0,9,7,0
+default,default,43,300006,V4 memory,1,8,0,9,7,0
+default,default,43,300007,Random,0,100,25,18,45,1
+default,default,43,300007,V3.1 masked,1,3,0,4,3,1
+default,default,43,300007,V4 no memory,1,3,0,4,3,1
+default,default,43,300007,V4 memory,1,5,0,6,5,1
+default,default,43,300008,Random,0,100,22,13,0,0
+default,default,43,300008,V3.1 masked,1,8,0,9,5,0
+default,default,43,300008,V4 no memory,1,8,0,9,5,0
+default,default,43,300008,V4 memory,1,8,0,9,5,0
+default,default,43,300009,Random,1,48,15,15,15,0
+default,default,43,300009,V3.1 masked,0,100,0,5,0,0
+default,default,43,300009,V4 no memory,0,100,0,5,0,0
+default,default,43,300009,V4 memory,0,100,0,5,0,0
+default,default,43,300010,Random,0,100,18,20,97,1
+default,default,43,300010,V3.1 masked,1,3,0,4,3,1
+default,default,43,300010,V4 no memory,1,3,0,4,3,1
+default,default,43,300010,V4 memory,1,5,0,6,5,1
+default,default,43,300011,Random,0,100,24,21,23,0
+default,default,43,300011,V3.1 masked,1,3,0,4,1,0
+default,default,43,300011,V4 no memory,1,3,0,4,1,0
+default,default,43,300011,V4 memory,0,100,0,2,0,0
+default,default,43,300012,Random,1,77,24,15,77,1
+default,default,43,300012,V3.1 masked,1,5,0,6,5,1
+default,default,43,300012,V4 no memory,1,5,0,6,5,1
+default,default,43,300012,V4 memory,1,5,0,6,5,1
+default,default,43,300013,Random,0,100,25,15,0,0
+default,default,43,300013,V3.1 masked,1,9,0,10,5,0
+default,default,43,300013,V4 no memory,1,9,0,10,5,0
+default,default,43,300013,V4 memory,1,9,0,10,5,0
+default,default,43,300014,Random,0,100,20,21,52,0
+default,default,43,300014,V3.1 masked,0,100,0,6,1,0
+default,default,43,300014,V4 no memory,0,100,0,6,1,0
+default,default,43,300014,V4 memory,0,100,0,11,2,0
+default,default,43,300015,Random,0,100,23,20,0,0
+default,default,43,300015,V3.1 masked,1,9,0,10,1,0
+default,default,43,300015,V4 no memory,1,9,0,10,1,0
+default,default,43,300015,V4 memory,1,9,0,10,1,0
+default,default,43,300016,Random,0,100,27,10,0,0
+default,default,43,300016,V3.1 masked,0,100,0,10,0,0
+default,default,43,300016,V4 no memory,0,100,0,10,0,0
+default,default,43,300016,V4 memory,0,100,0,11,0,0
+default,default,43,300017,Random,1,33,9,12,33,1
+default,default,43,300017,V3.1 masked,1,2,0,3,2,1
+default,default,43,300017,V4 no memory,1,2,0,3,2,1
+default,default,43,300017,V4 memory,0,100,0,4,100,1
+default,default,43,300018,Random,0,100,28,17,1,1
+default,default,43,300018,V3.1 masked,0,100,0,5,1,1
+default,default,43,300018,V4 no memory,0,100,0,5,1,1
+default,default,43,300018,V4 memory,0,100,0,10,1,1
+default,default,43,300019,Random,1,41,9,17,27,0
+default,default,43,300019,V3.1 masked,1,8,0,9,5,0
+default,default,43,300019,V4 no memory,1,8,0,9,5,0
+default,default,43,300019,V4 memory,1,8,0,9,5,0
+default,default,43,300020,Random,0,100,34,20,0,0
+default,default,43,300020,V3.1 masked,0,100,0,6,0,0
+default,default,43,300020,V4 no memory,0,100,0,6,0,0
+default,default,43,300020,V4 memory,0,100,0,5,0,0
+default,default,43,300021,Random,0,100,27,24,7,0
+default,default,43,300021,V3.1 masked,1,7,0,8,5,0
+default,default,43,300021,V4 no memory,1,7,0,8,5,0
+default,default,43,300021,V4 memory,0,100,0,8,1,0
+default,default,43,300022,Random,1,7,2,5,7,1
+default,default,43,300022,V3.1 masked,1,3,0,4,3,1
+default,default,43,300022,V4 no memory,1,3,0,4,3,1
+default,default,43,300022,V4 memory,1,3,0,4,3,1
+default,default,43,300023,Random,0,100,21,17,23,1
+default,default,43,300023,V3.1 masked,1,3,0,4,3,1
+default,default,43,300023,V4 no memory,1,3,0,4,3,1
+default,default,43,300023,V4 memory,1,7,0,6,4,1
+default,default,43,300024,Random,1,71,19,13,71,1
+default,default,43,300024,V3.1 masked,1,2,0,3,2,1
+default,default,43,300024,V4 no memory,1,2,0,3,2,1
+default,default,43,300024,V4 memory,1,6,0,6,6,1
+default,default,43,300025,Random,0,100,24,14,0,0
+default,default,43,300025,V3.1 masked,0,100,0,5,0,0
+default,default,43,300025,V4 no memory,0,100,0,5,0,0
+default,default,43,300025,V4 memory,0,100,0,7,0,0
+default,default,43,300026,Random,1,20,3,13,14,0
+default,default,43,300026,V3.1 masked,0,100,0,4,0,0
+default,default,43,300026,V4 no memory,0,100,0,4,0,0
+default,default,43,300026,V4 memory,0,100,0,9,96,0
+default,default,43,300027,Random,0,100,17,28,0,0
+default,default,43,300027,V3.1 masked,0,100,0,4,0,0
+default,default,43,300027,V4 no memory,0,100,0,4,0,0
+default,default,43,300027,V4 memory,0,100,0,9,0,0
+default,default,43,300028,Random,0,100,23,20,33,0
+default,default,43,300028,V3.1 masked,1,9,0,10,7,0
+default,default,43,300028,V4 no memory,1,9,0,10,6,0
+default,default,43,300028,V4 memory,0,100,0,10,1,0
+default,default,43,300029,Random,0,100,36,10,0,0
+default,default,43,300029,V3.1 masked,1,16,0,17,6,0
+default,default,43,300029,V4 no memory,1,16,0,17,6,0
+default,default,43,300029,V4 memory,0,100,0,18,89,0
+default,default,43,300030,Random,1,1,0,2,1,1
+default,default,43,300030,V3.1 masked,1,1,0,2,1,1
+default,default,43,300030,V4 no memory,1,1,0,2,1,1
+default,default,43,300030,V4 memory,1,1,0,2,1,1
+default,default,43,300031,Random,0,100,10,16,0,0
+default,default,43,300031,V3.1 masked,1,11,0,12,5,0
+default,default,43,300031,V4 no memory,1,11,0,12,5,0
+default,default,43,300031,V4 memory,1,11,0,12,5,0
+default,default,43,300032,Random,0,100,32,11,5,0
+default,default,43,300032,V3.1 masked,1,9,0,10,6,0
+default,default,43,300032,V4 no memory,1,9,0,10,6,0
+default,default,43,300032,V4 memory,1,9,0,10,6,0
+default,default,43,300033,Random,0,100,25,11,17,0
+default,default,43,300033,V3.1 masked,1,8,0,9,5,0
+default,default,43,300033,V4 no memory,1,8,0,9,5,0
+default,default,43,300033,V4 memory,0,100,0,4,0,0
+default,default,43,300034,Random,0,100,28,27,4,0
+default,default,43,300034,V3.1 masked,1,12,0,13,5,0
+default,default,43,300034,V4 no memory,1,12,0,13,5,0
+default,default,43,300034,V4 memory,0,100,0,7,0,0
+default,default,43,300035,Random,0,100,30,14,1,1
+default,default,43,300035,V3.1 masked,1,6,0,7,2,1
+default,default,43,300035,V4 no memory,1,6,0,7,2,1
+default,default,43,300035,V4 memory,1,6,0,7,2,1
+default,default,43,300036,Random,0,100,32,21,0,0
+default,default,43,300036,V3.1 masked,1,13,0,14,5,0
+default,default,43,300036,V4 no memory,1,13,0,14,5,0
+default,default,43,300036,V4 memory,0,100,0,14,92,0
+default,default,43,300037,Random,0,100,29,22,0,0
+default,default,43,300037,V3.1 masked,0,100,0,4,0,0
+default,default,43,300037,V4 no memory,0,100,0,4,0,0
+default,default,43,300037,V4 memory,0,100,0,4,0,0
+default,default,43,300038,Random,0,100,32,18,11,0
+default,default,43,300038,V3.1 masked,0,100,0,3,0,0
+default,default,43,300038,V4 no memory,0,100,0,4,0,0
+default,default,43,300038,V4 memory,0,100,0,5,0,0
+default,default,43,300039,Random,0,100,24,15,14,0
+default,default,43,300039,V3.1 masked,1,7,0,8,6,0
+default,default,43,300039,V4 no memory,1,7,0,8,6,0
+default,default,43,300039,V4 memory,0,100,0,12,7,0
+default,default,43,300040,Random,1,5,1,5,5,1
+default,default,43,300040,V3.1 masked,1,4,0,5,4,1
+default,default,43,300040,V4 no memory,1,4,0,5,4,1
+default,default,43,300040,V4 memory,1,4,0,5,4,1
+default,default,43,300041,Random,0,100,26,12,0,0
+default,default,43,300041,V3.1 masked,0,100,0,5,0,0
+default,default,43,300041,V4 no memory,0,100,0,5,0,0
+default,default,43,300041,V4 memory,0,100,0,5,0,0
+default,default,43,300042,Random,0,100,27,15,21,1
+default,default,43,300042,V3.1 masked,1,4,0,5,4,1
+default,default,43,300042,V4 no memory,1,4,0,5,4,1
+default,default,43,300042,V4 memory,1,6,0,6,6,1
+default,default,43,300043,Random,0,100,22,20,20,0
+default,default,43,300043,V3.1 masked,0,100,0,3,0,0
+default,default,43,300043,V4 no memory,0,100,0,3,0,0
+default,default,43,300043,V4 memory,1,9,0,10,7,0
+default,default,43,300044,Random,0,100,12,15,0,0
+default,default,43,300044,V3.1 masked,1,9,0,10,5,0
+default,default,43,300044,V4 no memory,1,9,0,10,5,0
+default,default,43,300044,V4 memory,1,9,0,10,5,0
+default,default,43,300045,Random,1,3,0,3,3,1
+default,default,43,300045,V3.1 masked,1,1,0,2,1,1
+default,default,43,300045,V4 no memory,1,1,0,2,1,1
+default,default,43,300045,V4 memory,1,1,0,2,1,1
+default,default,43,300046,Random,0,100,26,16,0,0
+default,default,43,300046,V3.1 masked,1,8,0,9,5,0
+default,default,43,300046,V4 no memory,1,8,0,9,5,0
+default,default,43,300046,V4 memory,1,8,0,9,5,0
+default,default,43,300047,Random,0,100,29,12,47,1
+default,default,43,300047,V3.1 masked,1,8,0,9,8,1
+default,default,43,300047,V4 no memory,1,2,0,2,2,1
+default,default,43,300047,V4 memory,0,100,0,6,3,1
+default,default,43,300048,Random,1,14,2,9,14,1
+default,default,43,300048,V3.1 masked,1,1,0,2,1,1
+default,default,43,300048,V4 no memory,1,1,0,2,1,1
+default,default,43,300048,V4 memory,0,100,0,3,100,1
+default,default,43,300049,Random,0,100,21,25,20,0
+default,default,43,300049,V3.1 masked,1,10,0,11,5,0
+default,default,43,300049,V4 no memory,1,10,0,11,5,0
+default,default,43,300049,V4 memory,0,100,0,4,0,0
+default,default,43,300050,Random,0,100,23,31,28,1
+default,default,43,300050,V3.1 masked,1,3,0,4,3,1
+default,default,43,300050,V4 no memory,1,3,0,4,3,1
+default,default,43,300050,V4 memory,0,100,0,4,100,1
+default,default,43,300051,Random,0,100,21,12,0,0
+default,default,43,300051,V3.1 masked,0,100,0,7,0,0
+default,default,43,300051,V4 no memory,0,100,0,7,0,0
+default,default,43,300051,V4 memory,0,100,0,10,0,0
+default,default,43,300052,Random,1,54,16,16,54,1
+default,default,43,300052,V3.1 masked,1,2,0,3,2,1
+default,default,43,300052,V4 no memory,1,2,0,3,2,1
+default,default,43,300052,V4 memory,0,100,0,2,100,1
+default,default,43,300053,Random,0,100,31,11,2,1
+default,default,43,300053,V3.1 masked,1,7,0,8,3,1
+default,default,43,300053,V4 no memory,1,7,0,8,3,1
+default,default,43,300053,V4 memory,1,7,0,8,3,1
+default,default,43,300054,Random,0,100,21,12,0,0
+default,default,43,300054,V3.1 masked,0,100,0,4,0,0
+default,default,43,300054,V4 no memory,0,100,0,4,0,0
+default,default,43,300054,V4 memory,0,100,0,9,0,0
+default,default,43,300055,Random,0,100,25,17,0,0
+default,default,43,300055,V3.1 masked,1,3,0,4,1,0
+default,default,43,300055,V4 no memory,1,3,0,4,1,0
+default,default,43,300055,V4 memory,1,3,0,4,1,0
+default,default,43,300056,Random,0,100,39,11,100,1
+default,default,43,300056,V3.1 masked,1,2,0,3,2,1
+default,default,43,300056,V4 no memory,1,2,0,3,2,1
+default,default,43,300056,V4 memory,1,2,0,3,2,1
+default,default,43,300057,Random,0,100,27,16,0,0
+default,default,43,300057,V3.1 masked,1,9,0,10,2,0
+default,default,43,300057,V4 no memory,1,9,0,10,2,0
+default,default,43,300057,V4 memory,0,100,0,8,0,0
+default,default,43,300058,Random,0,100,22,19,56,1
+default,default,43,300058,V3.1 masked,1,7,0,8,7,1
+default,default,43,300058,V4 no memory,1,2,0,2,2,1
+default,default,43,300058,V4 memory,1,9,0,8,7,1
+default,default,43,300059,Random,0,100,35,11,21,0
+default,default,43,300059,V3.1 masked,1,8,0,9,6,0
+default,default,43,300059,V4 no memory,1,8,0,9,6,0
+default,default,43,300059,V4 memory,1,8,0,9,6,0
+default,default,43,300060,Random,0,100,25,16,0,0
+default,default,43,300060,V3.1 masked,1,11,0,12,5,0
+default,default,43,300060,V4 no memory,1,11,0,12,5,0
+default,default,43,300060,V4 memory,1,11,0,12,5,0
+default,default,43,300061,Random,0,100,34,23,0,0
+default,default,43,300061,V3.1 masked,0,100,0,8,0,0
+default,default,43,300061,V4 no memory,0,100,0,8,0,0
+default,default,43,300061,V4 memory,0,100,0,7,0,0
+default,default,43,300062,Random,0,100,19,20,0,0
+default,default,43,300062,V3.1 masked,0,100,0,5,0,0
+default,default,43,300062,V4 no memory,0,100,0,5,0,0
+default,default,43,300062,V4 memory,0,100,0,7,0,0
+default,default,43,300063,Random,1,3,0,4,2,1
+default,default,43,300063,V3.1 masked,1,3,0,4,2,1
+default,default,43,300063,V4 no memory,1,3,0,4,2,1
+default,default,43,300063,V4 memory,1,3,0,4,2,1
+default,default,43,300064,Random,0,100,36,14,0,0
+default,default,43,300064,V3.1 masked,0,100,0,8,0,0
+default,default,43,300064,V4 no memory,0,100,0,8,0,0
+default,default,43,300064,V4 memory,0,100,0,7,0,0
+default,default,43,300065,Random,0,100,41,24,9,1
+default,default,43,300065,V3.1 masked,1,6,0,7,6,1
+default,default,43,300065,V4 no memory,1,6,0,7,6,1
+default,default,43,300065,V4 memory,1,6,0,7,6,1
+default,default,43,300066,Random,0,100,25,21,5,0
+default,default,43,300066,V3.1 masked,1,12,0,13,5,0
+default,default,43,300066,V4 no memory,1,12,0,13,5,0
+default,default,43,300066,V4 memory,0,100,0,7,0,0
+default,default,43,300067,Random,0,100,34,25,22,0
+default,default,43,300067,V3.1 masked,0,100,0,6,0,0
+default,default,43,300067,V4 no memory,0,100,0,6,0,0
+default,default,43,300067,V4 memory,0,100,0,8,0,0
+default,default,43,300068,Random,0,100,31,12,1,1
+default,default,43,300068,V3.1 masked,1,4,0,4,2,1
+default,default,43,300068,V4 no memory,1,4,0,4,2,1
+default,default,43,300068,V4 memory,1,4,0,4,2,1
+default,default,43,300069,Random,0,100,15,15,0,0
+default,default,43,300069,V3.1 masked,0,100,0,6,0,0
+default,default,43,300069,V4 no memory,0,100,0,6,0,0
+default,default,43,300069,V4 memory,0,100,0,4,0,0
+default,default,43,300070,Random,1,22,5,7,22,1
+default,default,43,300070,V3.1 masked,1,3,0,4,3,1
+default,default,43,300070,V4 no memory,1,3,0,4,3,1
+default,default,43,300070,V4 memory,1,7,0,6,4,1
+default,default,43,300071,Random,0,100,27,33,0,0
+default,default,43,300071,V3.1 masked,0,100,0,9,0,0
+default,default,43,300071,V4 no memory,0,100,0,9,0,0
+default,default,43,300071,V4 memory,0,100,0,8,0,0
+default,default,43,300072,Random,1,37,11,14,29,0
+default,default,43,300072,V3.1 masked,0,100,0,7,0,0
+default,default,43,300072,V4 no memory,0,100,0,7,0,0
+default,default,43,300072,V4 memory,1,10,0,11,5,0
+default,default,43,300073,Random,0,100,27,12,0,0
+default,default,43,300073,V3.1 masked,1,5,0,6,1,0
+default,default,43,300073,V4 no memory,1,5,0,6,1,0
+default,default,43,300073,V4 memory,1,5,0,6,1,0
+default,default,43,300074,Random,0,100,28,14,0,0
+default,default,43,300074,V3.1 masked,1,13,0,14,5,0
+default,default,43,300074,V4 no memory,1,13,0,14,5,0
+default,default,43,300074,V4 memory,0,100,0,6,0,0
+default,default,43,300075,Random,1,85,17,27,12,0
+default,default,43,300075,V3.1 masked,1,12,0,13,5,0
+default,default,43,300075,V4 no memory,1,12,0,13,5,0
+default,default,43,300075,V4 memory,0,100,0,7,0,0
+default,default,43,300076,Random,0,100,31,21,12,0
+default,default,43,300076,V3.1 masked,0,100,0,5,0,0
+default,default,43,300076,V4 no memory,0,100,0,5,0,0
+default,default,43,300076,V4 memory,0,100,0,7,0,0
+default,default,43,300077,Random,0,100,26,17,1,0
+default,default,43,300077,V3.1 masked,1,11,0,12,6,0
+default,default,43,300077,V4 no memory,1,11,0,12,6,0
+default,default,43,300077,V4 memory,0,100,0,12,95,0
+default,default,43,300078,Random,0,100,20,20,0,0
+default,default,43,300078,V3.1 masked,0,100,0,3,0,0
+default,default,43,300078,V4 no memory,0,100,0,3,0,0
+default,default,43,300078,V4 memory,0,100,0,5,0,0
+default,default,43,300079,Random,0,100,32,16,30,1
+default,default,43,300079,V3.1 masked,1,7,0,8,6,1
+default,default,43,300079,V4 no memory,1,7,0,8,6,1
+default,default,43,300079,V4 memory,0,100,0,12,7,1
+default,default,43,300080,Random,0,100,43,11,6,0
+default,default,43,300080,V3.1 masked,1,9,0,10,6,0
+default,default,43,300080,V4 no memory,1,9,0,10,6,0
+default,default,43,300080,V4 memory,1,9,0,10,6,0
+default,default,43,300081,Random,1,30,5,13,9,0
+default,default,43,300081,V3.1 masked,1,7,0,8,3,0
+default,default,43,300081,V4 no memory,1,7,0,8,3,0
+default,default,43,300081,V4 memory,0,100,0,7,96,0
+default,default,43,300082,Random,0,100,21,16,0,0
+default,default,43,300082,V3.1 masked,1,11,0,12,5,0
+default,default,43,300082,V4 no memory,1,11,0,12,5,0
+default,default,43,300082,V4 memory,0,100,0,12,94,0
+default,default,43,300083,Random,1,20,6,10,19,0
+default,default,43,300083,V3.1 masked,1,8,0,7,5,0
+default,default,43,300083,V4 no memory,1,8,0,7,5,0
+default,default,43,300083,V4 memory,1,6,0,6,4,0
+default,default,43,300084,Random,0,100,21,16,21,0
+default,default,43,300084,V3.1 masked,1,8,0,9,5,0
+default,default,43,300084,V4 no memory,1,8,0,9,5,0
+default,default,43,300084,V4 memory,0,100,0,14,8,0
+default,default,43,300085,Random,1,58,13,14,53,0
+default,default,43,300085,V3.1 masked,1,5,0,6,2,0
+default,default,43,300085,V4 no memory,1,5,0,6,2,0
+default,default,43,300085,V4 memory,1,5,0,6,2,0
+default,default,43,300086,Random,0,100,25,30,36,0
+default,default,43,300086,V3.1 masked,1,11,0,12,1,0
+default,default,43,300086,V4 no memory,1,11,0,12,1,0
+default,default,43,300086,V4 memory,1,13,0,13,2,0
+default,default,43,300087,Random,0,100,22,21,3,0
+default,default,43,300087,V3.1 masked,0,100,0,8,0,0
+default,default,43,300087,V4 no memory,0,100,0,8,0,0
+default,default,43,300087,V4 memory,0,100,0,14,92,0
+default,default,43,300088,Random,1,1,0,2,1,1
+default,default,43,300088,V3.1 masked,1,4,0,4,4,1
+default,default,43,300088,V4 no memory,1,4,0,4,4,1
+default,default,43,300088,V4 memory,1,4,0,4,4,1
+default,default,43,300089,Random,0,100,20,16,0,0
+default,default,43,300089,V3.1 masked,0,100,0,5,0,0
+default,default,43,300089,V4 no memory,0,100,0,5,0,0
+default,default,43,300089,V4 memory,0,100,0,7,0,0
+default,default,43,300090,Random,0,100,27,26,0,0
+default,default,43,300090,V3.1 masked,0,100,0,2,0,0
+default,default,43,300090,V4 no memory,0,100,0,2,0,0
+default,default,43,300090,V4 memory,0,100,0,2,0,0
+default,default,43,300091,Random,0,100,31,23,3,0
+default,default,43,300091,V3.1 masked,1,8,0,9,6,0
+default,default,43,300091,V4 no memory,1,8,0,9,5,0
+default,default,43,300091,V4 memory,1,8,0,9,6,0
+default,default,43,300092,Random,0,100,35,10,0,0
+default,default,43,300092,V3.1 masked,1,7,0,8,1,0
+default,default,43,300092,V4 no memory,1,7,0,8,1,0
+default,default,43,300092,V4 memory,1,7,0,8,1,0
+default,default,43,300093,Random,1,73,23,17,16,0
+default,default,43,300093,V3.1 masked,1,6,0,7,3,0
+default,default,43,300093,V4 no memory,1,6,0,7,3,0
+default,default,43,300093,V4 memory,0,100,0,6,97,0
+default,default,43,300094,Random,0,100,30,11,0,0
+default,default,43,300094,V3.1 masked,1,13,0,14,5,0
+default,default,43,300094,V4 no memory,1,13,0,14,5,0
+default,default,43,300094,V4 memory,0,100,0,8,0,0
+default,default,43,300095,Random,1,99,26,22,47,0
+default,default,43,300095,V3.1 masked,1,9,0,10,6,0
+default,default,43,300095,V4 no memory,1,9,0,10,6,0
+default,default,43,300095,V4 memory,1,11,0,12,9,0
+default,default,43,300096,Random,0,100,20,17,0,0
+default,default,43,300096,V3.1 masked,1,8,0,9,5,0
+default,default,43,300096,V4 no memory,1,8,0,9,5,0
+default,default,43,300096,V4 memory,1,8,0,9,5,0
+default,default,43,300097,Random,0,100,25,13,0,0
+default,default,43,300097,V3.1 masked,1,9,0,10,5,0
+default,default,43,300097,V4 no memory,1,9,0,10,5,0
+default,default,43,300097,V4 memory,1,11,0,12,7,0
+default,default,43,300098,Random,0,100,36,16,0,0
+default,default,43,300098,V3.1 masked,1,8,0,9,5,0
+default,default,43,300098,V4 no memory,1,8,0,9,5,0
+default,default,43,300098,V4 memory,1,8,0,9,5,0
+default,default,43,300099,Random,0,100,21,16,0,0
+default,default,43,300099,V3.1 masked,1,8,0,9,1,0
+default,default,43,300099,V4 no memory,1,8,0,9,1,0
+default,default,43,300099,V4 memory,0,100,0,9,93,0

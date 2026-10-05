@@ -117,8 +117,10 @@ def run_matchup(
     max_steps: int,
     seed: int,
     legal_mask: bool = False,
+    map_rows: tuple[str, ...] | None = None,
 ) -> dict[str, int]:
     env = HideSeekV3Env(
+        map_rows=map_rows,
         role="seeker",
         max_steps=max_steps,
         opponent_policy=model_policy(hider) if hider is not None else None,

@@ -86,3 +86,19 @@ python -m evaluation.evaluate_v31 --eval-seed-starts 70000 80000 90000 --legal-m
 ```
 
 วิธีทดลอง ผลราย seed และข้อจำกัดอยู่ใน [docs/v31_report.md](docs/v31_report.md)
+
+## V4: ทดสอบบนแผนที่ใหม่
+
+V4 เพิ่มแผนที่ฝึก T1/T2 และแยก E1–E3 สำหรับเลือกแนวทาง กับ F1/F2 สำหรับทดสอบครั้งสุดท้าย ทดลองฝึก Seeker ต่อจาก V3.1 แบบมีและไม่มีความจำช่องที่เคยเดิน โดยให้รางวัลสำรวจเหมือนกันทั้งสองแบบ
+
+บนแผนที่ F1/F2 ที่กันไว้ V4 แบบไม่มีความจำซึ่งเลือกจากชุด E จับ Hider V3 ได้ **202/600 (33.7%)** เทียบกับ V3.1 **146/600 (24.3%)** และ Seeker สุ่ม **186/600 (31.0%)** แต่ยังต่ำกว่าตัวสุ่มบน F1 และบนแผนที่เดิมได้ 62.7% เทียบกับ V3.1 ที่ 72.0% จึงยังเป็นผลทดลอง ไม่ได้แทนโมเดล V3.1 แบบมีความจำได้ 201/600 (33.5%) บนชุด F จึงยังไม่มีหลักฐานว่าความจำเพิ่มอัตราจับโดยรวม
+
+ดู [รายงาน V4](docs/v4_report.md), [กราฟชุด E](results/v4_models_validation_metrics.png) และ [กราฟชุด F](results/v4_models_test_metrics.png) โมเดลและผลรายเกมอยู่ใน `models/seeker_v4_*` และ `results/v4_*` ตามลำดับ หากต้องการรันทดลองซ้ำ:
+
+```bash
+python -m evaluation.evaluate_v4 --partition validation
+python -m training.train_v4
+python -m evaluation.evaluate_v4_models --partition validation
+python -m evaluation.evaluate_v4_models --partition test
+python -m evaluation.evaluate_v4_models --partition default
+```

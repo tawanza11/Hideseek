@@ -102,3 +102,18 @@ python -m evaluation.evaluate_v4_models --partition validation
 python -m evaluation.evaluate_v4_models --partition test
 python -m evaluation.evaluate_v4_models --partition default
 ```
+
+## V5: แผนที่หลากหลายและกรองทิศระหว่างฝึก
+
+V5 สร้างแผนที่ใหม่ 100 แผนที่สำหรับฝึกและ 10 แผนที่สำหรับ validation โดยกันอีก 20 แผนที่ไว้ทดสอบครั้งสุดท้ายใน V6 ทดลองฝึกต่อจาก V4 แบบไม่มีความจำด้วยงบเท่ากันสองชุด: PPO ปกติและ MaskablePPO ที่เลือกเฉพาะทิศที่เดินได้ตั้งแต่ระหว่างฝึก ดู [ตัวอย่างแผนที่](results/v5_map_examples.png)
+
+บน 10 แผนที่ validation แบบกรองทิศจับ Hider V3 ได้ **948/3000 (31.6%)** เทียบกับ Control **993/3000 (33.1%)** และ Seeker สุ่ม **956/3000 (31.9%)** แม้การกรองจะหยุดการเดินชนกำแพงระหว่างฝึก แต่ยังไม่เพิ่มอัตราจับตามเกณฑ์ที่กำหนด และบนแผนที่เดิม V5 ทั้งสองแบบต่ำกว่า V3.1 มาก จึงเก็บ V5 เป็นผลทดลอง ไม่แทนโมเดลเดิม
+
+รายละเอียดผลราย seed รายแผนที่ ข้อจำกัด และ [กราฟ validation](results/v5_validation_metrics.png) อยู่ใน [รายงาน V5](docs/v5_report.md) ทำซ้ำได้ด้วย:
+
+```bash
+python -m training.train_v5
+python -m evaluation.evaluate_v5 --partition validation
+python -m evaluation.evaluate_v5 --partition default
+python -m evaluation.evaluate_v5 --partition legacy
+```

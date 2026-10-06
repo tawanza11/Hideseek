@@ -166,21 +166,29 @@ def require_lock(output_dir: Path, model_dir: Path) -> dict[str, object]:
 
 
 def plot_results(rows: list[dict[str, int | str]], maps: tuple[str, ...], path: Path) -> None:
-    figure, axis = plt.subplots(figsize=(max(11, len(maps) * 1.3), 5))
+    chunks = tuple(maps[index:index + 10] for index in range(0, len(maps), 10))
+    figure, axes = plt.subplots(len(chunks), 1, figsize=(15, 5 * len(chunks)))
+    if len(chunks) == 1:
+        axes = (axes,)
     width = 0.16
-    for index, name in enumerate(MATCHUPS):
-        rates = [
-            mean(int(row["captured"]) for row in rows if row["map"] == map_name and row["matchup"] == name)
-            for map_name in maps
-        ]
-        axis.bar(
-            [map_index + (index - 2) * width for map_index in range(len(maps))],
-            rates, width=width, label=name,
-        )
-    axis.set_xticks(range(len(maps)), maps, rotation=40, ha="right")
-    axis.set_ylim(0, 1)
-    axis.set_ylabel("Capture rate against paired V3 hider")
-    axis.legend()
+    for axis, chunk in zip(axes, chunks, strict=True):
+        for index, name in enumerate(MATCHUPS):
+            rates = [
+                mean(
+                    int(row["captured"])
+                    for row in rows
+                    if row["map"] == map_name and row["matchup"] == name
+                )
+                for map_name in chunk
+            ]
+            axis.bar(
+                [map_index + (index - 2) * width for map_index in range(len(chunk))],
+                rates, width=width, label=name,
+            )
+        axis.set_xticks(range(len(chunk)), chunk, rotation=35, ha="right")
+        axis.set_ylim(0, 1)
+        axis.set_ylabel("Capture rate against paired V3 hider")
+    axes[0].legend()
     figure.tight_layout()
     path.parent.mkdir(parents=True, exist_ok=True)
     figure.savefig(path, dpi=150)

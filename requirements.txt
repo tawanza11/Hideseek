@@ -5,3 +5,4 @@ stable-baselines3==2.9.0
 sb3-contrib==2.9.0
 pygame==2.6.1
 matplotlib==3.11.2
+Pillow==12.3.0

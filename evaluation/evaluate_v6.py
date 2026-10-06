@@ -93,7 +93,17 @@ def capture_count(rows: list[dict[str, str]], matchup: str, seed: int | None = N
     )
 
 
-def lock_selection(output_dir: Path) -> dict[str, object]:
+def v6_model_hashes(model_dir: Path) -> dict[str, str]:
+    return {
+        f"{variant}_seed{seed}": file_hash(
+            model_dir / f"seeker_v6_{variant}_seed{seed}.zip"
+        )
+        for variant in ("flat", "curriculum")
+        for seed in EVAL_SEEDS
+    }
+
+
+def lock_selection(output_dir: Path, model_dir: Path) -> dict[str, object]:
     selection_path = output_dir / "results" / "v6_selection.json"
     if selection_path.exists():
         raise FileExistsError(f"V6 selection is already locked: {selection_path}")
@@ -124,6 +134,7 @@ def lock_selection(output_dir: Path) -> dict[str, object]:
         "selection": "curriculum" if passed else None,
         "validation_sha256": file_hash(validation_path),
         "default_sha256": file_hash(default_path),
+        "v6_model_sha256": v6_model_hashes(model_dir),
         "validation_games_per_matchup": validation_games,
         "default_games_per_matchup": default_games,
         "validation_captures": {
@@ -139,7 +150,7 @@ def lock_selection(output_dir: Path) -> dict[str, object]:
     return decision
 
 
-def require_lock(output_dir: Path) -> dict[str, object]:
+def require_lock(output_dir: Path, model_dir: Path) -> dict[str, object]:
     path = output_dir / "results" / "v6_selection.json"
     if not path.is_file():
         raise FileNotFoundError("Lock V6 validation and default results before opening final maps")
@@ -149,6 +160,8 @@ def require_lock(output_dir: Path) -> dict[str, object]:
     for partition in ("validation", "default"):
         if data.get(f"{partition}_sha256") != file_hash(result_path(output_dir, partition)):
             raise ValueError(f"V6 {partition} results changed since selection lock")
+    if data.get("v6_model_sha256") != v6_model_hashes(model_dir):
+        raise ValueError("V6 models changed since selection lock")
     return data
 
 
@@ -182,7 +195,7 @@ def evaluate(args: argparse.Namespace) -> None:
         maps = {"default": DEFAULT_MAP}
         seed_start = 500_000
     else:
-        require_lock(args.output_dir)
+        require_lock(args.output_dir, args.v6_model_dir)
         if result_path(args.output_dir, "final").exists():
             raise FileExistsError("V6 final results already exist; final maps may be evaluated once")
         from env.v5_maps import FINAL_TEST_MAPS
@@ -250,7 +263,7 @@ def evaluate(args: argparse.Namespace) -> None:
 def main() -> None:
     args = parse_args()
     if args.partition == "lock":
-        print(json.dumps(lock_selection(args.output_dir), indent=2))
+        print(json.dumps(lock_selection(args.output_dir, args.v6_model_dir), indent=2))
     else:
         evaluate(args)
 

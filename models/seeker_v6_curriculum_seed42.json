@@ -1,0 +1,39 @@
+{
+  "version": 6,
+  "role": "seeker",
+  "variant": "curriculum",
+  "seed": 42,
+  "source_model": "models/seeker_v4_nomemory_seed42.zip",
+  "source_timesteps": 100352,
+  "hider_models": [
+    "models/hider_v3_seed41.zip",
+    "models/hider_v3_seed42.zip",
+    "models/hider_v3_seed43.zip"
+  ],
+  "opponent_pool": [
+    "random",
+    "hider_v3_seed41",
+    "hider_v3_seed42",
+    "hider_v3_seed43"
+  ],
+  "stage_map_counts": [
+    28,
+    58,
+    108
+  ],
+  "phase_requested_timesteps": [
+    50000,
+    50000,
+    100000
+  ],
+  "phase_actual_timesteps": [
+    50176,
+    50176,
+    100352
+  ],
+  "actual_timesteps": 200704,
+  "novelty_bonus": 0.01,
+  "max_steps": 100,
+  "optimizer": "fresh_from_V4_weights",
+  "action_mask_during_training": false
+}

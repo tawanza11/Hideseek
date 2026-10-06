@@ -1,0 +1,27 @@
+{
+  "version": 6,
+  "selection": null,
+  "validation_sha256": "9fa264464917dead9b37297f38539868791e8a6af14db7702ca79f56fcf67ac0",
+  "default_sha256": "96fd51b6aaade057bb2f08d8619835164b5f8834ae4cfc33082e64a14f641730",
+  "v6_model_sha256": {
+    "flat_seed41": "6b2ccfe0dcb595bcad537e313d77ddb41d9d88adb9c7a55e2daa607ce8679a93",
+    "flat_seed42": "e8f6d21546fb2282e90b99e8118bb1924a5e6d80a1d81f05393ee962bbc6bd21",
+    "flat_seed43": "09dbddf99c9f05eb5613a594fc0f0639dcbe1a9a62043ef77620429bd928d7a2",
+    "curriculum_seed41": "8dc33460af1fdded3b9b80e506fc0e9be3d8cd37396be0b6230cf782bb09323b",
+    "curriculum_seed42": "05bed416fded2893bd4dfe53268cbc89c4865c8b0388c39236b8c8342a6b5df2",
+    "curriculum_seed43": "0d909150a2b3f945a0f6309c4f8eb649ee2cd7bf269a097c48561aff71df63e4"
+  },
+  "validation_games_per_matchup": 3000,
+  "default_games_per_matchup": 300,
+  "validation_captures": {
+    "curriculum": 578,
+    "flat": 543,
+    "v5_control": 993
+  },
+  "curriculum_seed_wins_over_flat": 2,
+  "default_captures": {
+    "curriculum": 56,
+    "v4_no_memory": 170
+  },
+  "criteria": "validation curriculum >= flat +2pp and V5 +2pp; wins >=2/3 seeds; default >= V4 -5pp"
+}

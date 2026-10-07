@@ -223,10 +223,11 @@ function setFrame(index) {
   $('sight').classList.toggle('yes', frame.visible);
   const outcome = $('outcome');
   outcome.className = 'outcome';
-  if (frame.event === 'seeker_captured' || (current === replay.frames.length - 1 && replay.outcome === 'seeker_captured')) {
+  const events = frame.events ?? (frame.event ? [frame.event] : []);
+  if (events.includes('seeker_captured') || (current === replay.frames.length - 1 && replay.outcome === 'seeker_captured')) {
     outcome.textContent = 'ฝ่ายหาจับฝ่ายซ่อนได้';
     outcome.classList.add('capture');
-  } else if (frame.event === 'hider_survived' || (current === replay.frames.length - 1 && replay.outcome === 'hider_survived')) {
+  } else if (events.includes('hider_survived') || (current === replay.frames.length - 1 && replay.outcome === 'hider_survived')) {
     outcome.textContent = 'ฝ่ายซ่อนรอดจนหมดเวลา';
     outcome.classList.add('survive');
   } else {
@@ -236,7 +237,10 @@ function setFrame(index) {
       seeker_climbed: 'ฝ่ายหาปีนข้ามกำแพง',
       hider_climbed: 'ฝ่ายซ่อนปีนข้ามกำแพง',
     };
-    outcome.textContent = eventText[frame.event] ?? (frame.event && frame.event !== 'start' ? frame.event : 'เกมกำลังดำเนินอยู่');
+    const visibleEvents = events.filter((event) => event !== 'start');
+    outcome.textContent = visibleEvents.length
+      ? visibleEvents.map((event) => eventText[event] ?? event).join(' · ')
+      : 'เกมกำลังดำเนินอยู่';
   }
   $('timeline').value = current;
   $('progress').textContent = `${current} / ${replay.frames.length - 1}`;

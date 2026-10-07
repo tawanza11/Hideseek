@@ -59,7 +59,7 @@ def export_replay(
     )
     frames: list[dict[str, object]] = []
 
-    def frame(step: int, action: int | None = None, event: str | None = None) -> dict[str, object]:
+    def frame(step: int, action: int | None = None, events: list[str] | None = None) -> dict[str, object]:
         result: dict[str, object] = {
             "step": step,
             "seeker": list(env.seeker_pos),
@@ -71,26 +71,23 @@ def export_replay(
         }
         if action is not None:
             result["action"] = ACTION_NAMES[action]
-        if event is not None:
-            result["event"] = event
+        if events:
+            result["events"] = events
+            result["event"] = events[0]
         return result
 
     try:
         observation, _ = env.reset(seed=episode_seed)
-        frames.append(frame(0, event="start"))
+        frames.append(frame(0, events=["start"]))
         outcome = ""
         for step in range(1, env.max_steps + 1):
             action = learned_action(seeker, observation)
             observation, _, terminated, truncated, info = env.step(action)
             outcome = "seeker_captured" if info["captured"] else "hider_survived" if truncated else ""
+            events = [f"{actor}_{kind}" for actor, kind in env.last_events]
             if outcome:
-                event = outcome
-            elif env.last_events:
-                actor, kind = env.last_events[0]
-                event = f"{actor}_{kind}"
-            else:
-                event = None
-            frames.append(frame(step, action, event))
+                events.append(outcome)
+            frames.append(frame(step, action, events))
             if terminated or truncated:
                 break
         if not outcome:

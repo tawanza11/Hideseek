@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101927" />
+    <title>Hide & Seek · 3D Replay</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div>
+          <p class="eyebrow">MODEL REPLAY / SPECTATOR VIEW</p>
+          <h1>Hide <span>&</span> Seek <small>3D</small></h1>
+          <p class="subtitle">ดูการตัดสินใจจริงของ AI ทีละก้าวบนแผนที่เดียวกับที่ใช้เล่น</p>
+        </div>
+        <label class="upload">เปิดไฟล์ replay JSON<input id="file" type="file" accept="application/json,.json" /></label>
+      </header>
+
+      <main class="layout">
+        <section class="stage-panel" aria-label="ภาพเกม 3D">
+          <div id="stage"></div>
+          <div class="stage-label">ลากเพื่อหมุน · เลื่อนเพื่อซูม · เห็นทั้งสองฝ่ายในมุมผู้ชม</div>
+        </section>
+
+        <aside class="info">
+          <div class="round-label">ผลการเล่นจริง</div>
+          <h2 id="map-title">กำลังโหลด…</h2>
+          <div class="meta" id="model-meta"></div>
+          <div class="divider"></div>
+          <div class="agents">
+            <div class="agent"><span class="dot seeker"></span><div><strong>Seeker</strong><small>AI ฝ่ายหา</small></div><b id="seeker-pos">–</b></div>
+            <div class="agent"><span class="dot hider"></span><div><strong>Hider</strong><small>AI ฝ่ายซ่อน</small></div><b id="hider-pos">–</b></div>
+          </div>
+          <div class="sight" id="sight">–</div>
+          <div class="stat-grid">
+            <div><small>ก้าว</small><strong id="step">–</strong></div>
+            <div><small>การเดินของฝ่ายหา</small><strong id="action">–</strong></div>
+            <div><small>บล็อก / ทางปีน</small><strong id="objects">–</strong></div>
+          </div>
+          <div class="outcome" id="outcome">–</div>
+          <p class="note">ภาพนี้เป็นมุมผู้ชม: แสดงฝ่ายซ่อนแม้ฝ่ายหาจะมองไม่เห็น เส้นสีเหลืองจะปรากฏเมื่อฝ่ายหามองเห็นจริง</p>
+        </aside>
+      </main>
+
+      <footer class="controls">
+        <button id="play" type="button" aria-label="เล่นหรือหยุด">▶ เล่น</button>
+        <input id="timeline" type="range" min="0" max="0" value="0" aria-label="เลือกก้าว" />
+        <span id="progress">0 / 0</span>
+        <label class="speed">ความเร็ว <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label>
+        <button id="reset-camera" class="quiet" type="button">มุมกล้องเดิม</button>
+      </footer>
+      <div id="error" class="error" role="alert" hidden></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

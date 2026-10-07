@@ -29,10 +29,10 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def verify_selection(results_dir: Path, model_dir: Path) -> None:
+def verify_selection(results_dir: Path, model_dir: Path, v3_model_dir: Path) -> None:
     selection_path = results_dir / "v7_selection.json"
     locked = json.loads(selection_path.read_text(encoding="utf-8"))
-    current = select(results_dir, model_dir)
+    current = select(results_dir, model_dir, v3_model_dir)
     if locked != current:
         raise ValueError("V7 models or validation evidence changed after selection lock")
     if not locked["eligible_for_final"]:
@@ -43,12 +43,17 @@ def verify_selection(results_dir: Path, model_dir: Path) -> None:
 
 def main() -> None:
     args = parse_args()
-    verify_selection(args.results_dir, args.model_dir)
+    verify_selection(args.results_dir, args.model_dir, args.v3_model_dir)
     seeker_output = args.output_dir / "v7_final_seeker.csv"
     hider_output = args.output_dir / "v7_final_hider.csv"
-    if seeker_output.exists() or hider_output.exists():
+    attempt_path = args.output_dir / "v7_final_attempt.json"
+    if seeker_output.exists() or hider_output.exists() or attempt_path.exists():
         raise FileExistsError("V7 final results already exist; keep the first opening intact")
     args.output_dir.mkdir(parents=True, exist_ok=True)
+    seeker_pending = args.output_dir / "v7_final_seeker.pending.csv"
+    hider_pending = args.output_dir / "v7_final_hider.pending.csv"
+    if seeker_pending.exists() or hider_pending.exists():
+        raise FileExistsError("Previous V7 final evaluation is incomplete")
     seekers = {
         seed: PPO.load(str(args.model_dir / f"seeker_v7_route_seed{seed}.zip"), device="cpu")
         for seed in SEEDS
@@ -64,8 +69,12 @@ def main() -> None:
         )[0]
         for seed in SEEDS
     }
-    with seeker_output.open("w", newline="", encoding="utf-8") as seeker_file, \
-            hider_output.open("w", newline="", encoding="utf-8") as hider_file:
+    attempt_path.write_text(json.dumps({
+        "status": "started", "selection": str(args.results_dir / "v7_selection.json"),
+        "final_layout_hash": EXPECTED_FINAL_HASH,
+    }, indent=2) + "\n", encoding="utf-8")
+    with seeker_pending.open("w", newline="", encoding="utf-8") as seeker_file, \
+            hider_pending.open("w", newline="", encoding="utf-8") as hider_file:
         seeker_writer = csv.DictWriter(seeker_file, fieldnames=(
             "map", "training_seed", "eval_seed", "hider", "seeker", "captured", "steps", "pushes", "crosses"
         ))
@@ -105,6 +114,12 @@ def main() -> None:
             seeker_file.flush()
             hider_file.flush()
             print(f"Final map {name} complete", flush=True)
+    seeker_pending.replace(seeker_output)
+    hider_pending.replace(hider_output)
+    attempt_path.write_text(json.dumps({
+        "status": "complete", "selection": str(args.results_dir / "v7_selection.json"),
+        "final_layout_hash": EXPECTED_FINAL_HASH,
+    }, indent=2) + "\n", encoding="utf-8")
     print(f"Final results: {seeker_output} and {hider_output}")
 
 

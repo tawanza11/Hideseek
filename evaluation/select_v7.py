@@ -67,15 +67,16 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Summarize and lock V7 validation selection")
     parser.add_argument("--results-dir", type=Path, default=Path("results"))
     parser.add_argument("--model-dir", type=Path, default=Path("models"))
+    parser.add_argument("--v3-model-dir", type=Path, default=Path("models"))
     parser.add_argument("--lock", action="store_true")
     return parser.parse_args()
 
 
-def select(results_dir: Path, model_dir: Path) -> dict[str, object]:
+def select(results_dir: Path, model_dir: Path, v3_model_dir: Path = Path("models")) -> dict[str, object]:
     hashes: dict[str, str] = {}
     seeker_results: dict[str, dict[str, dict[str, int | bool]]] = {}
     hider_results: dict[str, dict[str, dict[str, int | bool]]] = {}
-    object_results: dict[str, dict[str, dict[str, int]]] = {}
+    object_results: dict[str, dict[str, dict[str, dict[str, int]]]] = {}
     for seed in SEEDS:
         seeker_results[str(seed)] = {}
         for hider in ("v3", "v7"):
@@ -139,8 +140,23 @@ def select(results_dir: Path, model_dir: Path) -> dict[str, object]:
                     != (7, role, seed)
                     or metadata.get("training_layout_hash") != layout_hash(TRAIN_LAYOUTS)):
                 raise ValueError(f"V7 model metadata mismatch: {path}")
+            expected = ({
+                "route_hints": True, "teacher_steps": 20_000, "imitation_epochs": 5,
+                "ppo_requested_steps": 25_000, "ppo_actual_steps": 25_088,
+                "ppo_hider_pool": True, "observation_size": 516,
+            } if role == "seeker" else {
+                "ppo_requested_steps": 50_000, "ppo_actual_steps": 50_176,
+                "opponent_pool": ["random", "observable_search_teacher"],
+                "observation_size": 508,
+            })
+            if any(metadata.get(key) != value for key, value in expected.items()):
+                raise ValueError(f"V7 training protocol mismatch: {path}")
             hashes[path.name] = file_hash(path)
             hashes[path.with_suffix(".json").name] = file_hash(path.with_suffix(".json"))
+
+        v3_path = v3_model_dir / f"hider_v3_seed{seed}.zip"
+        hashes[v3_path.name] = file_hash(v3_path)
+        hashes[v3_path.with_suffix(".json").name] = file_hash(v3_path.with_suffix(".json"))
 
     seeker_pass = all(
         sum(bool(seeker_results[str(seed)][hider]["passed"]) for seed in SEEDS) >= 2
@@ -150,6 +166,26 @@ def select(results_dir: Path, model_dir: Path) -> dict[str, object]:
         sum(bool(hider_results[str(seed)][seeker]["passed"]) for seed in SEEDS) >= 2
         for seeker in ("random", "teacher")
     )
+    object_by_seed = {
+        str(seed): {
+            "seeker_gain": (
+                object_results[str(seed)]["seeker"]["full"]["success"]
+                - object_results[str(seed)]["seeker"]["no_ramp"]["success"]
+            ),
+            "seeker_crosses": object_results[str(seed)]["seeker"]["full"]["crosses"],
+            "hider_gain": (
+                object_results[str(seed)]["hider"]["full"]["success"]
+                - object_results[str(seed)]["hider"]["no_block"]["success"]
+            ),
+            "hider_pushes": object_results[str(seed)]["hider"]["full"]["pushes"],
+        }
+        for seed in SEEDS
+    }
+    object_pass = sum(
+        value["seeker_gain"] >= 50 and value["seeker_crosses"] >= 20
+        and value["hider_gain"] >= 50 and value["hider_pushes"] >= 20
+        for value in object_by_seed.values()
+    ) >= 2
     return {
         "version": 7,
         "validation_layout_hash": layout_hash(VALIDATION_LAYOUTS),
@@ -158,19 +194,22 @@ def select(results_dir: Path, model_dir: Path) -> dict[str, object]:
         "seeker_results": seeker_results,
         "hider_results": hider_results,
         "object_results": object_results,
+        "object_by_seed": object_by_seed,
         "seeker_pass": seeker_pass,
         "hider_pass": hider_pass,
-        "eligible_for_final": seeker_pass and hider_pass,
+        "object_pass": object_pass,
+        "eligible_for_final": seeker_pass and hider_pass and object_pass,
         "artifact_hashes": hashes,
     }
 
 
 def main() -> None:
     args = parse_args()
-    result = select(args.results_dir, args.model_dir)
+    result = select(args.results_dir, args.model_dir, args.v3_model_dir)
     print(json.dumps({
         "seeker_pass": result["seeker_pass"],
         "hider_pass": result["hider_pass"],
+        "object_pass": result["object_pass"],
         "eligible_for_final": result["eligible_for_final"],
         "seeker_results": result["seeker_results"],
         "hider_results": result["hider_results"],

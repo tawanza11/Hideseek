@@ -28,7 +28,7 @@ MODES = {
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Compare V7 object rules by paired games")
     parser.add_argument("--training-seed", type=int, choices=(41, 42, 43), default=41)
-    parser.add_argument("--episodes-per-map", type=int, default=30)
+    parser.add_argument("--episodes-per-map", type=int, default=100)
     parser.add_argument("--seeker-model-dir", type=Path, required=True)
     parser.add_argument("--hider-model-dir", type=Path, required=True)
     parser.add_argument("--v3-model-dir", type=Path, default=Path("models"))

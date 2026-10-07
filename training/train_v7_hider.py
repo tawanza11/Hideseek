@@ -18,7 +18,7 @@ from training.v7_teacher import search_action
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train a V7 Hider on object layouts")
     parser.add_argument("--seed", type=int, choices=(41, 42, 43), default=41)
-    parser.add_argument("--ppo-steps", type=int, default=150_000)
+    parser.add_argument("--ppo-steps", type=int, default=50_000)
     parser.add_argument("--model-dir", type=Path, default=Path("models"))
     parser.add_argument("--output-dir", type=Path, default=Path("."))
     args = parser.parse_args()

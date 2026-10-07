@@ -7,6 +7,7 @@ import csv
 import json
 from pathlib import Path
 
+import torch
 from stable_baselines3 import PPO
 
 from env.hide_seek_v7_env import HideSeekV7Env, ObjectLayout
@@ -50,6 +51,7 @@ def original_spawn(layout: ObjectLayout, seed: int) -> dict[str, tuple[int, int]
 
 def main() -> None:
     args = parse_args()
+    torch.set_num_threads(1)
     seed = args.training_seed
     seeker_path = args.seeker_model_dir / f"seeker_v7_route_seed{seed}.zip"
     hider_path = args.hider_model_dir / f"hider_v7_seed{seed}.zip"

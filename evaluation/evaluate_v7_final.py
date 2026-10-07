@@ -7,6 +7,7 @@ import csv
 import json
 from pathlib import Path
 
+import torch
 from stable_baselines3 import PPO
 
 from env.v7_maps import FINAL_LAYOUTS, layout_hash
@@ -43,6 +44,7 @@ def verify_selection(results_dir: Path, model_dir: Path, v3_model_dir: Path) -> 
 
 def main() -> None:
     args = parse_args()
+    torch.set_num_threads(1)
     verify_selection(args.results_dir, args.model_dir, args.v3_model_dir)
     seeker_output = args.output_dir / "v7_final_seeker.csv"
     hider_output = args.output_dir / "v7_final_hider.csv"

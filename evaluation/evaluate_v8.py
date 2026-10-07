@@ -68,7 +68,11 @@ def choose_action(
         tensor = torch.as_tensor(model_observation[None, :], device=model.device)
         probabilities = model.policy.get_distribution(tensor).distribution.probs[0].cpu().numpy()
     weights = np.asarray([probabilities[action] for action in allowed], dtype=np.float64)
-    weights /= weights.sum()
+    total = weights.sum()
+    if not np.isfinite(total) or total <= 0:
+        weights = np.full(len(allowed), 1 / len(allowed), dtype=np.float64)
+    else:
+        weights /= total
     return int(rng.choice(allowed, p=weights))
 
 

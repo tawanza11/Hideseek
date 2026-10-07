@@ -83,6 +83,13 @@ def select(results_dir: Path, model_dir: Path, v7_model_dir: Path) -> dict[str, 
             variants != VARIANTS for variants in groups.values()
         ):
             raise ValueError(f"Missing paired V8 games: {path}")
+        expected_games = {
+            (name, str(3_000_000 + map_index * 10_000 + episode))
+            for map_index, name in enumerate(MAPS)
+            for episode in range(EPISODES)
+        }
+        if set(groups) != expected_games:
+            raise ValueError(f"V8 evaluation seeds mismatch: {path}")
         scores[str(seed)] = {}
         events[str(seed)] = {}
         for role in ("seeker", "hider"):

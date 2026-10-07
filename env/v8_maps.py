@@ -44,7 +44,7 @@ CANONICAL_SEEKER_SPAWN: Cell = (7, 4)
 CANONICAL_HIDER_SPAWN: Cell = (5, 2)
 
 TRAIN_SEED_START = 2_000_000
-VALIDATION_SEED_START = 2_100_000
+VALIDATION_SEED_START = 2_300_000
 FINAL_SEED_START = 2_200_000
 
 # These optional wall cells sit on room edges away from the block, doorway,

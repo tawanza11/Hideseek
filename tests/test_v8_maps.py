@@ -31,7 +31,7 @@ from env.v8_maps import (
 
 EXPECTED_HASHES = {
     "V8T": "985410095794e0b85f66bfab01a002a04a32436566a879cd825f2c33be9f9c93",
-    "V8E": "af8cda1a7968e5df7beb3f223df061b2b22715e1ad288e298dde42c0bd81b0b1",
+    "V8E": "857b0c7239ac2cd4268b25316a0e02fd60c98523fe15160a3f88f3216dcae05e",
     "V8F": "39a228af09a010bef8c0750fd3ceac5716cf42cd9c13126bc4e746a1be36ce5e",
 }
 

@@ -71,6 +71,15 @@ class HideSeekV7EnvTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             env.reset(options={"seeker_pos": (2, 1), "hider_pos": (2, 1)})
 
+    def test_layout_specific_spawns_follow_selected_layout(self) -> None:
+        spawns = ({"seeker_pos": (1, 2), "hider_pos": (3, 2)},)
+        env = HideSeekV7Env(layouts=(LAYOUT,), spawns_by_layout=spawns)
+        for seed in (1, 2):
+            env.reset(seed=seed)
+            self.assertEqual((env.seeker_pos, env.hider_pos), ((1, 2), (3, 2)))
+        with self.assertRaises(ValueError):
+            HideSeekV7Env(layouts=(LAYOUT,), spawns_by_layout=())
+
 
 if __name__ == "__main__":
     unittest.main()

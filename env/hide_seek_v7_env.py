@@ -75,6 +75,7 @@ class HideSeekV7Env(HideSeekV3Env):
         novelty_bonus: float = 0.0,
         enable_blocks: bool = True,
         enable_ramp: bool = True,
+        spawns_by_layout: tuple[dict[str, Cell], ...] | None = None,
     ) -> None:
         if not layouts:
             raise ValueError("layouts must not be empty")
@@ -89,6 +90,8 @@ class HideSeekV7Env(HideSeekV3Env):
             policy is not None and not callable(policy) for policy in opponent_policies
         ):
             raise TypeError("opponent policies must be callable or None")
+        if spawns_by_layout is not None and len(spawns_by_layout) != len(layouts):
+            raise ValueError("spawns_by_layout must match the number of layouts")
         self.opponent_policies = opponent_policies
         self.opponent_index = 0
         self.layouts = layouts
@@ -98,6 +101,7 @@ class HideSeekV7Env(HideSeekV3Env):
         self.low_wall = layouts[0].low_wall
         self.enable_blocks = enable_blocks
         self.enable_ramp = enable_ramp
+        self.spawns_by_layout = spawns_by_layout
         self.novelty_bonus = novelty_bonus
         self._visits = {
             "seeker": np.zeros(size * size, dtype=np.float32),
@@ -142,11 +146,14 @@ class HideSeekV7Env(HideSeekV3Env):
         self._last_seen = {"seeker": None, "hider": None}
         self.last_events = []
         _, info = super().reset(seed=None, options=None)
-        if options is not None:
-            if set(options) != {"seeker_pos", "hider_pos"}:
+        selected_spawn = options if options is not None else (
+            self.spawns_by_layout[self.layout_index] if self.spawns_by_layout is not None else None
+        )
+        if selected_spawn is not None:
+            if set(selected_spawn) != {"seeker_pos", "hider_pos"}:
                 raise ValueError("reset options require seeker_pos and hider_pos")
-            seeker_pos = options["seeker_pos"]
-            hider_pos = options["hider_pos"]
+            seeker_pos = selected_spawn["seeker_pos"]
+            hider_pos = selected_spawn["hider_pos"]
             if not (
                 isinstance(seeker_pos, tuple) and len(seeker_pos) == 2
                 and all(isinstance(value, int) for value in seeker_pos)

@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "model": "seeker_v7_route_seed41",
+  "hider_model": "hider_v7_seed41",
+  "map": "V7E001",
+  "training_seed": 41,
+  "episode_seed": 1700001,
+  "max_steps": 100,
+  "outcome": "seeker_captured",
+  "map_rows": [
+    "##########",
+    "#..#.....#",
+    "#.....#..#",
+    "#..#..#..#",
+    "####.#####",
+    "#........#",
+    "#....#...#",
+    "#....#...#",
+    "#....#...#",
+    "##########"
+  ],
+  "frames": [
+    {
+      "step": 0,
+      "seeker": [
+        2,
+        5
+      ],
+      "hider": [
+        6,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "events": [
+        "start"
+      ],
+      "event": "start"
+    },
+    {
+      "step": 1,
+      "seeker": [
+        1,
+        5
+      ],
+      "hider": [
+        5,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "left"
+    },
+    {
+      "step": 2,
+      "seeker": [
+        1,
+        3
+      ],
+      "hider": [
+        4,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up",
+      "events": [
+        "seeker_climbed"
+      ],
+      "event": "seeker_climbed"
+    },
+    {
+      "step": 3,
+      "seeker": [
+        1,
+        2
+      ],
+      "hider": [
+        4,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 4,
+      "seeker": [
+        1,
+        1
+      ],
+      "hider": [
+        3,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          2,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up",
+      "events": [
+        "hider_block_pushed"
+      ],
+      "event": "hider_block_pushed"
+    },
+    {
+      "step": 5,
+      "seeker": [
+        2,
+        1
+      ],
+      "hider": [
+        2,
+        2
+      ],
+      "visible": true,
+      "blocks": [
+        [
+          1,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "right",
+      "events": [
+        "hider_block_pushed"
+      ],
+      "event": "hider_block_pushed"
+    },
+    {
+      "step": 6,
+      "seeker": [
+        2,
+        2
+      ],
+      "hider": [
+        2,
+        2
+      ],
+      "visible": true,
+      "blocks": [
+        [
+          1,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down",
+      "events": [
+        "seeker_captured"
+      ],
+      "event": "seeker_captured"
+    }
+  ]
+}

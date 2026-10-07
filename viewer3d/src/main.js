@@ -307,7 +307,7 @@ function animate(now) {
 }
 requestAnimationFrame(animate);
 
-const replayPath = new URLSearchParams(window.location.search).get('replay') ?? '/replay-example.json';
+const replayPath = new URLSearchParams(window.location.search).get('replay') ?? '/v7_demo_long.json';
 fetch(replayPath)
   .then((response) => { if (!response.ok) throw new Error('ไม่พบ replay ตัวอย่าง'); return response.json(); })
   .then(loadReplay)

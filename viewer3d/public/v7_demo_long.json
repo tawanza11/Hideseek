@@ -1,0 +1,3174 @@
+{
+  "schema_version": 1,
+  "model": "seeker_v7_route_seed41",
+  "hider_model": "hider_v7_seed41",
+  "map": "V7E001",
+  "training_seed": 41,
+  "episode_seed": 1700011,
+  "max_steps": 100,
+  "outcome": "hider_survived",
+  "map_rows": [
+    "##########",
+    "#..#.....#",
+    "#.....#..#",
+    "#..#..#..#",
+    "####.#####",
+    "#........#",
+    "#....#...#",
+    "#....#...#",
+    "#....#...#",
+    "##########"
+  ],
+  "frames": [
+    {
+      "step": 0,
+      "seeker": [
+        1,
+        1
+      ],
+      "hider": [
+        5,
+        5
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "events": [
+        "start"
+      ],
+      "event": "start"
+    },
+    {
+      "step": 1,
+      "seeker": [
+        2,
+        1
+      ],
+      "hider": [
+        4,
+        5
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "right"
+    },
+    {
+      "step": 2,
+      "seeker": [
+        2,
+        2
+      ],
+      "hider": [
+        4,
+        4
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 3,
+      "seeker": [
+        1,
+        2
+      ],
+      "hider": [
+        4,
+        5
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "left"
+    },
+    {
+      "step": 4,
+      "seeker": [
+        1,
+        3
+      ],
+      "hider": [
+        3,
+        5
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 5,
+      "seeker": [
+        2,
+        3
+      ],
+      "hider": [
+        2,
+        5
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "right"
+    },
+    {
+      "step": 6,
+      "seeker": [
+        2,
+        2
+      ],
+      "hider": [
+        2,
+        6
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 7,
+      "seeker": [
+        3,
+        2
+      ],
+      "hider": [
+        1,
+        6
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          4,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "right",
+      "events": [
+        "seeker_block_pushed"
+      ],
+      "event": "seeker_block_pushed"
+    },
+    {
+      "step": 8,
+      "seeker": [
+        4,
+        2
+      ],
+      "hider": [
+        1,
+        5
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "right",
+      "events": [
+        "seeker_block_pushed"
+      ],
+      "event": "seeker_block_pushed"
+    },
+    {
+      "step": 9,
+      "seeker": [
+        4,
+        1
+      ],
+      "hider": [
+        1,
+        3
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up",
+      "events": [
+        "hider_climbed"
+      ],
+      "event": "hider_climbed"
+    },
+    {
+      "step": 10,
+      "seeker": [
+        5,
+        1
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "right"
+    },
+    {
+      "step": 11,
+      "seeker": [
+        6,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "right"
+    },
+    {
+      "step": 12,
+      "seeker": [
+        7,
+        1
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": true,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "right"
+    },
+    {
+      "step": 13,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        3
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "right"
+    },
+    {
+      "step": 14,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 15,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 16,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 17,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 18,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 19,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 20,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 21,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 22,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 23,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 24,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 25,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 26,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 27,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 28,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 29,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 30,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 31,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 32,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 33,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 34,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 35,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 36,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 37,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 38,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 39,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 40,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 41,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 42,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 43,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 44,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 45,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 46,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 47,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 48,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 49,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 50,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 51,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 52,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 53,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 54,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 55,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 56,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 57,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 58,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 59,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 60,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 61,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 62,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 63,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 64,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 65,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 66,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 67,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 68,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 69,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 70,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 71,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 72,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 73,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 74,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 75,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 76,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 77,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 78,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 79,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 80,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 81,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 82,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 83,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 84,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 85,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 86,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 87,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 88,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 89,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 90,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 91,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 92,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 93,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 94,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 95,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 96,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 97,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 98,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down"
+    },
+    {
+      "step": 99,
+      "seeker": [
+        8,
+        1
+      ],
+      "hider": [
+        1,
+        1
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "up"
+    },
+    {
+      "step": 100,
+      "seeker": [
+        8,
+        2
+      ],
+      "hider": [
+        1,
+        2
+      ],
+      "visible": false,
+      "blocks": [
+        [
+          5,
+          2
+        ]
+      ],
+      "ramps": [
+        [
+          1,
+          5
+        ]
+      ],
+      "low_walls": [
+        [
+          1,
+          4
+        ]
+      ],
+      "action": "down",
+      "events": [
+        "hider_survived"
+      ],
+      "event": "hider_survived"
+    }
+  ]
+}

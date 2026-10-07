@@ -1,0 +1,302 @@
+{
+  "version": 7,
+  "validation_layout_hash": "5f686fc63dcffd65a06db7027e6c669ac7686388ebb82e7b41ff7696529570b9",
+  "training_layout_hash": "4bfa6d36ba7fe4aea962f832175dbffdc167a89b021377e3532ba42d0568ea33",
+  "episodes_per_map_per_seed": 100,
+  "seeker_results": {
+    "41": {
+      "v3": {
+        "candidate": 939,
+        "baseline": 401,
+        "difference": 538,
+        "maps_not_worse": 10,
+        "passed": true
+      },
+      "v7": {
+        "candidate": 730,
+        "baseline": 453,
+        "difference": 277,
+        "maps_not_worse": 10,
+        "passed": true
+      }
+    },
+    "42": {
+      "v3": {
+        "candidate": 884,
+        "baseline": 408,
+        "difference": 476,
+        "maps_not_worse": 10,
+        "passed": true
+      },
+      "v7": {
+        "candidate": 876,
+        "baseline": 441,
+        "difference": 435,
+        "maps_not_worse": 10,
+        "passed": true
+      }
+    },
+    "43": {
+      "v3": {
+        "candidate": 924,
+        "baseline": 408,
+        "difference": 516,
+        "maps_not_worse": 10,
+        "passed": true
+      },
+      "v7": {
+        "candidate": 811,
+        "baseline": 449,
+        "difference": 362,
+        "maps_not_worse": 10,
+        "passed": true
+      }
+    }
+  },
+  "hider_results": {
+    "41": {
+      "random": {
+        "candidate": 621,
+        "baseline": 451,
+        "difference": 170,
+        "maps_not_worse": 10,
+        "passed": true
+      },
+      "teacher": {
+        "candidate": 476,
+        "baseline": 13,
+        "difference": 463,
+        "maps_not_worse": 10,
+        "passed": true
+      }
+    },
+    "42": {
+      "random": {
+        "candidate": 658,
+        "baseline": 451,
+        "difference": 207,
+        "maps_not_worse": 10,
+        "passed": true
+      },
+      "teacher": {
+        "candidate": 51,
+        "baseline": 13,
+        "difference": 38,
+        "maps_not_worse": 10,
+        "passed": false
+      }
+    },
+    "43": {
+      "random": {
+        "candidate": 645,
+        "baseline": 451,
+        "difference": 194,
+        "maps_not_worse": 10,
+        "passed": true
+      },
+      "teacher": {
+        "candidate": 378,
+        "baseline": 13,
+        "difference": 365,
+        "maps_not_worse": 10,
+        "passed": true
+      }
+    }
+  },
+  "object_results": {
+    "41": {
+      "seeker": {
+        "full": {
+          "success": 929,
+          "pushes": 1228,
+          "crosses": 183
+        },
+        "no_block": {
+          "success": 995,
+          "pushes": 0,
+          "crosses": 179
+        },
+        "no_ramp": {
+          "success": 914,
+          "pushes": 1225,
+          "crosses": 0
+        },
+        "no_objects": {
+          "success": 991,
+          "pushes": 0,
+          "crosses": 0
+        }
+      },
+      "hider": {
+        "full": {
+          "success": 481,
+          "pushes": 318,
+          "crosses": 36
+        },
+        "no_block": {
+          "success": 485,
+          "pushes": 0,
+          "crosses": 41
+        },
+        "no_ramp": {
+          "success": 504,
+          "pushes": 290,
+          "crosses": 0
+        },
+        "no_objects": {
+          "success": 520,
+          "pushes": 0,
+          "crosses": 0
+        }
+      }
+    },
+    "42": {
+      "seeker": {
+        "full": {
+          "success": 871,
+          "pushes": 1213,
+          "crosses": 179
+        },
+        "no_block": {
+          "success": 937,
+          "pushes": 0,
+          "crosses": 177
+        },
+        "no_ramp": {
+          "success": 862,
+          "pushes": 1136,
+          "crosses": 0
+        },
+        "no_objects": {
+          "success": 949,
+          "pushes": 0,
+          "crosses": 0
+        }
+      },
+      "hider": {
+        "full": {
+          "success": 60,
+          "pushes": 81,
+          "crosses": 62
+        },
+        "no_block": {
+          "success": 15,
+          "pushes": 0,
+          "crosses": 57
+        },
+        "no_ramp": {
+          "success": 81,
+          "pushes": 84,
+          "crosses": 0
+        },
+        "no_objects": {
+          "success": 17,
+          "pushes": 0,
+          "crosses": 0
+        }
+      }
+    },
+    "43": {
+      "seeker": {
+        "full": {
+          "success": 915,
+          "pushes": 1279,
+          "crosses": 171
+        },
+        "no_block": {
+          "success": 999,
+          "pushes": 0,
+          "crosses": 165
+        },
+        "no_ramp": {
+          "success": 900,
+          "pushes": 1286,
+          "crosses": 0
+        },
+        "no_objects": {
+          "success": 996,
+          "pushes": 0,
+          "crosses": 0
+        }
+      },
+      "hider": {
+        "full": {
+          "success": 366,
+          "pushes": 204,
+          "crosses": 18
+        },
+        "no_block": {
+          "success": 368,
+          "pushes": 0,
+          "crosses": 18
+        },
+        "no_ramp": {
+          "success": 377,
+          "pushes": 223,
+          "crosses": 0
+        },
+        "no_objects": {
+          "success": 350,
+          "pushes": 0,
+          "crosses": 0
+        }
+      }
+    }
+  },
+  "object_by_seed": {
+    "41": {
+      "seeker_gain": 15,
+      "seeker_crosses": 183,
+      "hider_gain": -4,
+      "hider_pushes": 318
+    },
+    "42": {
+      "seeker_gain": 9,
+      "seeker_crosses": 179,
+      "hider_gain": 45,
+      "hider_pushes": 81
+    },
+    "43": {
+      "seeker_gain": 15,
+      "seeker_crosses": 171,
+      "hider_gain": -2,
+      "hider_pushes": 204
+    }
+  },
+  "seeker_pass": true,
+  "hider_pass": true,
+  "object_pass": false,
+  "eligible_for_final": false,
+  "artifact_hashes": {
+    "v7_seeker_v3_seed41.csv": "aef7bc3a6a046d9c174e179f2b6e85ee761344130203c0e175e567bd6ea1e95b",
+    "v7_seeker_v7_seed41.csv": "9d653171acc06c1eb90bf9c235855e1e2664b57f6f40c32e3d59b896a2abbc22",
+    "v7_hider_seed41.csv": "7f72a05a821b5eb70dd6aa1ffdc50bf55cfb2381670842a43bf76c72380edd14",
+    "v7_objects_seed41.csv": "c179e47e7af97f0080c2a39b61d6f9bbf16cb27a411a1eccfa8dbc6c1990cbbf",
+    "seeker_v7_route_seed41.zip": "308d5468daa368e6be52e8498c088114ddef0961fc6caee61379339de3d86d8c",
+    "seeker_v7_route_seed41.json": "b0279d71873f3655b24488be755aaa0a793ea1af49db05a136128fb01c9c99f9",
+    "hider_v7_seed41.zip": "e3bc058f30d9d465a23ae610872b6ccd0aae5af6a76425a0e7670748df096b38",
+    "hider_v7_seed41.json": "164f2736c929025736d5e38f3d48d48b584b92769fe9dc81e46e7b2f936cf1a1",
+    "hider_v3_seed41.zip": "69616c0341df325dbde8b50cf0dead918e71d92076b5f80dd7017723436e1d6c",
+    "hider_v3_seed41.json": "22c8e9e580f86ba558827291ca04fa8c75f857330ecc7eda5fbef0e1b317e733",
+    "v7_seeker_v3_seed42.csv": "57c1976d8e33a90f91e20bc07a8718ea1174e6f159b345325b3033e0d57eb6a2",
+    "v7_seeker_v7_seed42.csv": "3d01f036ef304759b82dfdbcc00ae39c9140645880a9dd9dba97cefac216e805",
+    "v7_hider_seed42.csv": "86eba046a7259a934c53976c50031e0814acc6a29c58df733b123b98c0c74f09",
+    "v7_objects_seed42.csv": "9a1d3fe1920ab244ab87ea0e78f5d128ff9e4d8c7673e95f851bf222a761eed9",
+    "seeker_v7_route_seed42.zip": "8820e5d701683952479a72857b82dbefe4f2ad1b2ce5cd248efa05a9cac4a0b5",
+    "seeker_v7_route_seed42.json": "3014442934ac82ac2b81e509bd1fa5e5759f8158410c2222598b83d1c60cb319",
+    "hider_v7_seed42.zip": "00cd9ccc036772fb164b508ef630b9d91f164566ed5e7be173c209f66b2f32d9",
+    "hider_v7_seed42.json": "28c81720c2ac94d40fecb3cc5eaafcfef6714b1b240324ab23fc141e3c16b5b8",
+    "hider_v3_seed42.zip": "1e0a32857c76f7f955f352d8c1f168da4569bde7e0e7bfea3816543ace0253ef",
+    "hider_v3_seed42.json": "1da7d5d561d4e48327c21230e6a14489a6975cff5ad97a19b7cd43fd61087fc4",
+    "v7_seeker_v3_seed43.csv": "6f28f535b7b848c4102d546fd4045cd5fa1856d0bc4cbc4e7862b2d912e4a34c",
+    "v7_seeker_v7_seed43.csv": "b84a7252e8e0ed5cd2b96e84fa8977666fc6644b5ec15479f892511f6fe753b2",
+    "v7_hider_seed43.csv": "61d0e0f93e99b6a3177dfddfdded2a7f3f70ef0d1bb5882f151be0802f6d0924",
+    "v7_objects_seed43.csv": "ac890bc2fd084d4ea42774689d84c7c98efc9410e7557ea04f0816fd65889c72",
+    "seeker_v7_route_seed43.zip": "c5002a063348be37b6f41a296b5a44bafbe39ecde47358d9c91dee694ff47da1",
+    "seeker_v7_route_seed43.json": "a8da3b7c0ea5f7397818318ca6943f9cf97637b23e78a57694d5d5760469c028",
+    "hider_v7_seed43.zip": "18a459255cccc4ac890c4ada8808a2e6eb119a704e91538b79cc368b736a4513",
+    "hider_v7_seed43.json": "3cdac7f43fbd1196626ffa543247d29bf75600405c7110842483c46ed38d2a9f",
+    "hider_v3_seed43.zip": "e00fe8b357d6fc56b51febf9f29dd04f7251e50fcf54a94f7b0bf7cd442b06f3",
+    "hider_v3_seed43.json": "599c439002b045732918d1820c350d903fd8eb156a8fd2bf76317e0b786b0fb2"
+  }
+}
